@@ -1,0 +1,271 @@
+\documentclass[12pt]{report}
+\usepackage{sagetex}
+\usepackage{amsmath}
+\newcommand{\gen}[1]{
+[#1_{{ij}}]
+}
+\title{\textbf{Matrix}}
+
+\author{Amarjeet singh ,AVI kaur}
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\chapter{Matrix}
+\section{Introduction}
+\begin{sagesilent}
+m=var('m')
+n=var('n')
+\end{sagesilent}
+
+A matrix is an $\sage{m} \times \sage{n}$  array of numbers arranged in $\sage{m}$ rows and $\sage{n}$ columns. The matrix is then described as being of order $\sage{m} \times \sage{m}$. Eq.\ref{1} illustrates a matrix with m rows and n columns.
+
+
+
+\[[a]=\left(\begin{array}{rrrrrr}
+a_{11} & a_{12} & a_{13} & a_{14} & ... & a_{1n} \\
+a_{21} & a_{22} & a_{23} & a_{24} & ... & a_{2n} \\
+a_{31} & a_{32} & a_{33} & a_{44} & ... & a_{3n} \\
+a_{41} & a_{42} & a_{43} & a_{44} & ... & a_{4n} \\
+.     & .     & .     & .     & ... & .     \\
+a_{m1} & a_{m2} & a_{m3} & a_{m4} & ... & a_{mn} \\
+\end{array}\right) \label{1} 
+\ref{1} \] 
+
+If $\sage{m!=n}$ in matrix Eq.\ref{1}, the matrix is called rectangular. If $\sage{m==1}$ and $\sage{n>1}$, the elements of Eq.\ref{1} form a single row called a row matrix. If $\sage{m>1}$, and $\sage{n==1}$ the elements form single columns called a columns matrix. If $\sage{m==n}$, the array is called a square matrix.
+Matrix is usually denoted by [d] or \underline{d}.
+
+we represent the elements by $a_{{ij}}$, where the subcripts i and j indicate the row number and the column number.
+
+A rectangular matix [a] is given by : 
+\begin{sagesilent}
+a=matrix([[1,2,3],[1,2,4],[6,2,3]])
+b=matrix([[3,4],[1,2]])
+c=matrix([[3],[4],[1]])
+d=matrix([[3],[4],[1],[2]])
+e=matrix([[7,4,4],[2,4,5],[3,5,6]])
+\end{sagesilent}
+\begin{center}
+[a]=$\sage{a}$
+\end{center}
+where [a] has three rows and three columns.
+
+A square matrix [b] is given by :
+\begin{center}
+[b]=$\sage{b}$
+\end{center}
+
+where [b] has two rows and two columns.
+
+A row matrix [c] is given by :
+\begin{center}
+[c]=$\sage{c}$
+\end{center}
+
+where [c] has one rows and three columns.
+
+A columns matrix [b] is given by :
+\begin{center}
+[d]=$\sage{d}$
+\end{center}
+
+where [d] has four rows and one columns.
+
+Matrices and matrix notation are often used to express algebraic equations in compact form and are frequently used in the finite element formulation of equations.
+\section{Matrix Operations}
+We will noe presentsome common matrix operations that will be used in this text.
+\subsection{Multiplication of a Matrix by a Scalar}
+If we have a scalar k and c matrix athen the product $a = k \times c $ is given by
+\begin{center}
+\[d_{{ij}} = Ka_{{ij}}\]
+\end{center}
+e.g
+\begin{center}
+[a]=$\sage{a}$
+k= 4\\
+\[d_{{ij}} = Ka_{{ij}}\]
+[d] = $\sage{4*a}$
+\end{center}
+Note that if [d] is of order $ m \times n $,then [a] is also of order $ m \times n $
+\subsection{Addition of a Matrix}
+Matrices of the same order can be added together by summing corresponding elements of the matrices. Subtractions is performed in similar manner. Matrices of unlike order cannot be added or subtracted.
+\[ [c]=[a]+[b]= [b]+[a] \]
+\begin{center}
+
+[a]=$\sage{a}$
+[b]=$\sage{e}$
+
+
+[c]=$\sage{a}$ + $\sage{e}$
+=$\sage{a+e}$
+=$\sage{a}$ + $\sage{e}$
+\end{center}
+Again,remember that the matrix [a],[b] and [c] must all be same. For e.g., a $ 2 \times 2 $ marix cannot be added to a $ 3 \times 3 $ matrix.
+
+\subsection{Multiplications of Matrix}
+For two matrices a and b to be multiplied in the order shown in Eq.(A.2.4), the number of columns in a must equal the number of rows in b. For
+
+\[[c] = [a] \times [b]\]
+
+If [a] is an M x N matrix, then [b] must have n
+rows. Using subscript notation, we can write the product of matrices
+[a] and [b] as
+
+\[[c_{{ij}}] = \sum_{e=1}^{n} {a_{ie}}{b_{ej}}\]
+
+where n is the total number of columns in [a] or of rows in
+[b]. For matrix [a] of order 2x2 and matrix
+[b] of order 2x2, after multiplying the two matrices, we
+have
+
+\[[c]=\left(\begin{array}{rrrrrr}
+a_{11} \times b_{11} + a_{12} \times b_{21} & a_{11} \times b_{12} + a_{12} \times b_{22}\\
+a_{21} \times b_{11} + a_{22} \times b_{21} & a_{21} \times b_{12} + a_{22} \times b_{22}\\
+\end{array}\right).\]
+
+for example, let 
+
+\begin{center}
+[a] = $\sage{a}$
+
+[b] = $\sage{e}$
+
+
+\[[c] = [a] \times [b]\]
+
+
+[c] = $\sage{a*e}$
+\end{center}
+
+In general, matrix multiplication is not commutative; that is,
+
+\[ [a][b] \neq [b][a] \]
+
+The validity of the products of two matrices [a] and
+[b] is commanly illustrated by
+
+\[ [a] \hspace{0.5cm} [b] = [c] \]
+\[ (i \times e)(e \times j) (i \times j) \]
+
+where the product matrix [c] will be of order $i \times j$;
+that is, it will have the same number of rows as matrix [a]
+and the same number of columns as matrix [b].
+
+\subsection{Transpose}
+Any matrix, Whether a row, column, or rectangular matrix, can be
+transposed. This operation is frequently used in finite element
+equation formulations. The transpose of a matrix [a] is
+commonly denoted by $[a]^T$. The superscript T is used to
+denote the transpose of matrix throughout this text. The transpose of
+matrix is obtained by interchanging rows and columns, that is, the
+first row becomes the first column, the second row becomes the second
+column, and so on.. For the transpose of matrix [a]
+
+\[\gen{a} =[a_{{ji}}]^T\]
+For example, if we let
+\begin{center}
+[a] = $\sage{a}$
+$[a]^T$ = $\sage{a.transpose()}$
+\end{center}
+
+Where we have interchanged the rows and columns of [a] to
+obtain its transpose.
+Another important relationship that involves the
+transpose is
+$$ ([a][b])^T = [b]^T [a]^T $$
+
+That is, the transpose of the product of matrices [a] and
+[b is equal to the transpose of the latter matrix
+[b multiplied by the transpose of matrix [a] in
+that order, provided the order of the initial matrices continues to
+satisfy the rule for matrix multiplication, Eq. (A.2.8). In general,
+this property holds for any number of matrices; that is,
+$$([a][b][c]...[k])^T = [k]^T... [c]^T[b]^T[a]^T $$ 
+
+Note that the transpose of a column matrix is a row matrix. As a
+numerical example of the use of Eq.(A.2.10), let
+
+$$[a] = \sage{a}  [c] = \sage{c}$$
+First$$[a][b] = \sage{a}\sage{c}=\sage{a*c}$$
+Then $$([a][b])^T= \sage{(a*c).transpose()}$$
+
+Because $[b]^T$ and $[a]^T$ can be multiplied
+according to the rule for matrix multiplication, We have
+
+$$ [b]^T[a]^T = \sage{a} \sage{c} = \sage{(a*c).transpose()}$$
+
+Hence, on comparing Eqs.(A.2.12) and (A.2.13), we have shown (for this
+case) the validity of Eq. (A.2.10). A simple proof of the general
+validity of Eq.(A.2.10) is left to your discretion.
+\subsection{Symmetric Matrices}
+If a square matrix is equal to its transpose, it is called a symmetric
+matrix, that is,
+$$ [a] = [a]^T $$
+ if then [a] is a symmetric matrix. As an
+example,
+
+$$[a]=\sage{matrix([[3,1,2],[1,4,0],[2,0,3]])}$$
+is a symmetric matrix because each element $a_{{ij}}$ equals $a_{{ji}}$ for $i
+\neq j$. In Eq. (A.2.14), note that the main diagonal running from the
+upper left corner to the lower right corner is the line of symmetry of
+the symmetric matrix [a]. Remember that the only a square
+matrix can be symmetric.
+\subsection{Unit Matrix}
+The unit (or identity) matrix I is such that
+
+$$[a][I]=[I][a]=[a]$$
+
+The unit matrix acts in the same way that the number one acts in
+conventional multiplication. The unit matrix is always a square matrix
+of any possible order with each element of the main diagonal equal to
+one and all other elements equals to zero. For example, the $3 \times 3$
+unit matrix is given by
+$$\sage{matrix.identity(3)}$$
+
+\subsection{Inverse of a Matrix}
+
+The inverse of a matrix is a matrix such that
+
+$$[a]^{-1}[a]=[a][a]^{-1}=[I]$$
+where the superscript, -1, denotes the inverse of [a] as $[a]^{-1}$.
+Section A.3 provides more information regarding the properties of the
+inverse of a matrix and gives a method for determining it.
+
+\subsection{Orthogonal Matrix}
+A matrix [T] is an orthogonal matrix if
+$$[T]^T[T] = [T][T]^T=1$$
+Hence, for an orthogonal matrix, we have
+$$[T]^{-1}=[T]^T$$
+
+An orthogonal matrix frequently used is the transformation or rotation
+matrix [T]. In two dimensional space, the transformation matrix
+relates components of a vector in one coordinate system to components
+in another system. For instance, the displacement (and force as well)
+vector components of [d] expressed in the x-y system are related to
+those in the x-y system (Figure A-1 and Section 3.3) by
+
+$$\hat{d}=[T][d]$$
+
+
+or
+where [T] is the square matrix on the right side of Eq. (A.2.20).
+
+
+Another use of an orthogonal matrix is to change from the local
+stiffness matrix to a global stiffness matrix for an element. That is,
+given a local stiffness matrix $\hat{[h]}$ for an element, if the
+element is arbitrarily oriented in the x-y plane, then
+$$[k]=[T]^T \hat{k}[T]=[T]^{-1}\hat{k}[T]$$
+
+Equation (A.2.21) is used throughout this text to express the
+stiffness matrix [k] in the x-y plane.
+
+By further examination of [T], we see that the trigonometric terms in
+[T] can be interpreted as the direction cosines of line O$\hat{x}$ or
+$d{x}$, we have from Eq. (A.2.20).
+
+\begin{center}
+$\textless{t11}\hspace{0.5cm}{t12}\textgreater=\textless{cos\theta}\hspace{0.5cm}{sin\theta}\textgreater$
+\end{center}
+
+\end{document}
