@@ -1,8 +1,16 @@
 \documentclass[12pt]{report}
 \usepackage{sagetex}
 \usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5in,
+ top=0.5in,
+ bottom=0.5in}
+
 \newcommand{\gen}[1]{
 [#1_{{ij}}]
+}
+\newcommand{\lab}[1]{
+Eq.\ref{#1}
 }
 \title{\textbf{Matrix}}
 
@@ -18,104 +26,102 @@ m=var('m')
 n=var('n')
 \end{sagesilent}
 
-A matrix is an $\sage{m} \times \sage{n}$  array of numbers arranged in $\sage{m}$ rows and $\sage{n}$ columns. The matrix is then described as being of order $\sage{m} \times \sage{m}$. Eq.\ref{1} illustrates a matrix with m rows and n columns.
+A matrix is an $\sage{m} \times \sage{n}$  array of numbers arranged in $\sage{m}$ rows and $\sage{n}$ columns. The matrix is then described as being of order $\sage{m} \times \sage{m}$. \lab{eq:general} illustrates a matrix with m rows and n columns.
 
 
 
-\[[a]=\left(\begin{array}{rrrrrr}
+\[\underline{a}=\left(\begin{array}{rrrrrr}
 a_{11} & a_{12} & a_{13} & a_{14} & ... & a_{1n} \\
 a_{21} & a_{22} & a_{23} & a_{24} & ... & a_{2n} \\
 a_{31} & a_{32} & a_{33} & a_{44} & ... & a_{3n} \\
 a_{41} & a_{42} & a_{43} & a_{44} & ... & a_{4n} \\
 .     & .     & .     & .     & ... & .     \\
 a_{m1} & a_{m2} & a_{m3} & a_{m4} & ... & a_{mn} \\
-\end{array}\right) \label{1} 
-\ref{1} \] 
+\end{array}\right) \label{eq:general}             \ref{eq:general} 
+ \] 
 
-If $\sage{m!=n}$ in matrix Eq.\ref{1}, the matrix is called rectangular. If $\sage{m==1}$ and $\sage{n>1}$, the elements of Eq.\ref{1} form a single row called a row matrix. If $\sage{m>1}$, and $\sage{n==1}$ the elements form single columns called a columns matrix. If $\sage{m==n}$, the array is called a square matrix.
-Matrix is usually denoted by [d] or \underline{d}.
+If $\sage{m!=n}$ in matrix \lab{eq:general}, the matrix is called rectangular. If $\sage{m==1}$ and $\sage{n>1}$, the elements of Eq.\lab{eq:general} form a single row called a row matrix. If $\sage{m>1}$, and $\sage{n==1}$ the elements form single columns called a columns matrix. If $\sage{m==n}$, the array is called a square matrix.
+Matrix is usually denoted by \underline{d} or \underline{d}.
 
 we represent the elements by $a_{{ij}}$, where the subcripts i and j indicate the row number and the column number.
 
-A rectangular matix [a] is given by : 
+A rectangular matix \underline{a} is given by : 
 \begin{sagesilent}
 a=matrix([[1,2,3],[1,2,4],[6,2,3]])
 b=matrix([[3,4],[1,2]])
 c=matrix([[3],[4],[1]])
-d=matrix([[3],[4],[1],[2]])
+d=matrix([[3,4,1,2]])
 e=matrix([[7,4,4],[2,4,5],[3,5,6]])
 \end{sagesilent}
-\begin{center}
-[a]=$\sage{a}$
-\end{center}
-where [a] has three rows and three columns.
+$$
+\underline{a}=\sage{a}
+\label{eq:rectangle}
+\ref{eq:rectangle}
+$$
+where \underline{a} has three rows and three columns.
 
-A square matrix [b] is given by:
-\begin{center}
-[b]=$\sage{b}$
-\end{center}
-where [b] has two rows and two columns.
+A square matrix \underline{b} is given by:
+$$\underline{b}=\sage{b}
+\label{eq:square}
+\ref{eq:square}
+$$
+where \underline{b} has two rows and two columns.
 
-A row matrix [c] is given by:
-\begin{center}
-[c]=$\sage{c}$
-\end{center}
-where [c] has one rows and three columns.
+A row matrix \underline{c} is given by:
+$$\underline{c}=\sage{c}
+\label{eq:row}
+\ref{eq:row}
+$$
+where \underline{c} has one rows and three columns.
 
-A columns matrix [b] is given by:
-\begin{center}
-[d]=$\sage{d}$
-\end{center}
-where [d] has four rows and one columns.
+A columns matrix \underline{b} is given by:
+$$\underline{d}=\sage{d}
+\label{eq:col}
+\ref{eq:col}
+$$
+where \underline{d} has four rows and one columns.
 
 Matrices and matrix notation are often used to express algebraic equations in compact form and are frequently used in the finite element formulation of equations.
 \section{Matrix Operations}
 We will noe presentsome common matrix operations that will be used in this text.
 \subsection{Multiplication of a Matrix by a Scalar}
-If we have a scalar k and c matrix athen the product $a = k \times c $ is given by
-\begin{center}
-\[d_{{ij}} = Ka_{{ij}}\]
-\end{center}
+If we have a scalar k and \underline{c} matrix athen the product $a = k \times \underline{c} $ is given by
+$$[d_{{ij}} = Ka_{{ij}} \label{eq:element}
+\ref{eq:element}$$
 e.g
-\begin{center}
-[a]=$\sage{a}$
-k= 4\\
-\[d_{{ij}} = Ka_{{ij}}\]
-[d] = $\sage{4*a}$
-\end{center}
-Note that if [d] is of order $ m \times n $,then [a] is also of order $ m \times n $
+$$
+\underline{a}=\sage{a}
+k= 4$$
+$$d_{{ij}} = Ka_{{ij}}$$
+$$\underline{d} = \sage{4*a}$$
+Note that if \underline{d} is of order $ m \times n $,then \underline{a} is also of order $ m \times n $
 \subsection{Addition of a Matrix}
 Matrices of the same order can be added together by summing corresponding elements of the matrices. Subtractions is performed in similar manner. Matrices of unlike order cannot be added or subtracted.
-\[ [c]=[a]+[b]= [b]+[a] \]
-\begin{center}
-
-[a]=$\sage{a}$
-[b]=$\sage{e}$
-
-
-[c]=$\sage{a}$ + $\sage{e}$
-=$\sage{a+e}$
-=$\sage{a}$ + $\sage{e}$
-\end{center}
-Again,remember that the matrix [a],[b] and [c] must all be same. For e.g., a $ 2 \times 2 $ marix cannot be added to a $ 3 \times 3 $ matrix.
+\[ \underline{c}=\underline{a}+\underline{b}= \underline{b}+\underline{a} \]
+$$\underline{a}=\sage{a}
+\underline{b}=\sage{e}$$
+$$\underline{c}=\sage{a} + \sage{e}$$
+$$=\sage{a+e}$$
+$$=\sage{a} + \sage{e}$$
+Again,remember that the matrix \underline{a},\underline{b} and \underline{c} must all be same. For e.g., a $ 2 \times 2 $ marix cannot be added to a $ 3 \times 3 $ matrix.
 
 \subsection{Multiplications of Matrix}
 For two matrices a and b to be multiplied in the order shown in Eq.(A.2.4), the number of columns in a must equal the number of rows in b. For
 
-\[[c] = [a] \times [b]\]
+\[\underline{c} = \underline{a} \times \underline{b}\]
 
-If [a] is an M x N matrix, then [b] must have n
+If \underline{a} is an M x N matrix, then \underline{b} must have n
 rows. Using subscript notation, we can write the product of matrices
-[a] and [b] as
+\underline{a} and \underline{b} as
 
 \[[c_{{ij}}] = \sum_{e=1}^{n} {a_{ie}}{b_{ej}}\]
 
-where n is the total number of columns in [a] or of rows in
-[b]. For matrix [a] of order 2x2 and matrix
-[b] of order 2x2, after multiplying the two matrices, we
+where n is the total number of columns in \underline{a} or of rows in
+\underline{b}. For matrix \underline{a} of order 2x2 and matrix
+\underline{b} of order 2x2, after multiplying the two matrices, we
 have
 
-\[[c]=\left(\begin{array}{rrrrrr}
+\[\underline{c}=\left(\begin{array}{rrrrrr}
 a_{11} \times b_{11} + a_{12} \times b_{21} & a_{11} \times b_{12} + a_{12} \times b_{22}\\
 a_{21} \times b_{11} + a_{22} \times b_{21} & a_{21} \times b_{12} + a_{22} \times b_{22}\\
 \end{array}\right).\]
@@ -123,73 +129,73 @@ a_{21} \times b_{11} + a_{22} \times b_{21} & a_{21} \times b_{12} + a_{22} \tim
 for example, let 
 
 \begin{center}
-[a] = $\sage{a}$
+\underline{a} = $\sage{a}$
 
-[b] = $\sage{e}$
-
-
-\[[c] = [a] \times [b]\]
+\underline{b} = $\sage{e}$
 
 
-[c] = $\sage{a*e}$
+\[\underline{c} = \underline{a} \times \underline{b}\]
+
+
+\underline{c} = $\sage{a*e}$
 \end{center}
 
 In general, matrix multiplication is not commutative; that is,
 
-\[ [a][b] \neq [b][a] \]
+\[ \underline{a}\underline{b} \neq \underline{b}\underline{a} \]
 
-The validity of the products of two matrices [a] and
-[b] is commanly illustrated by
+The validity of the products of two matrices \underline{a} and
+\underline{b} is commanly illustrated by
 
-\[ [a] \hspace{0.5cm} [b] = [c] \]
+\[ \underline{a} \hspace{0.5cm} \underline{b} = \underline{c} \]
 \[ (i \times e)(e \times j) (i \times j) \]
 
-where the product matrix [c] will be of order $i \times j$;
-that is, it will have the same number of rows as matrix [a]
-and the same number of columns as matrix [b].
+where the product matrix \underline{c} will be of order $i \times j$;
+that is, it will have the same number of rows as matrix \underline{a}
+and the same number of columns as matrix \underline{b}.
 
 \subsection{Transpose}
 Any matrix, Whether a row, column, or rectangular matrix, can be
 transposed. This operation is frequently used in finite element
-equation formulations. The transpose of a matrix [a] is
-commonly denoted by $[a]^T$. The superscript T is used to
+equation formulations. The transpose of a matrix \underline{a} is
+commonly denoted by $\underline{a}^T$. The superscript T is used to
 denote the transpose of matrix throughout this text. The transpose of
 matrix is obtained by interchanging rows and columns, that is, the
 first row becomes the first column, the second row becomes the second
-column, and so on.. For the transpose of matrix [a]
+column, and so on.. For the transpose of matrix \underline{a}
 
 \[\gen{a} =[a_{{ji}}]^T\]
 For example, if we let
 \begin{center}
-[a] = $\sage{a}$
-$[a]^T$ = $\sage{a.transpose()}$
+\underline{a} = $\sage{a}$
+$\underline{a}^T$ = $\sage{a.transpose()}$
 \end{center}
 
-Where we have interchanged the rows and columns of [a] to
+Where we have interchanged the rows and columns of \underline{a} to
 obtain its transpose.
 Another important relationship that involves the
 transpose is
-$$ ([a][b])^T = [b]^T [a]^T $$
+$$ (\underline{a}\underline{b})^T = \underline{b}^T \underline{a}^T $$
 
-That is, the transpose of the product of matrices [a] and
+That is, the transpose of the product of matrices \underline{a} and
 [b is equal to the transpose of the latter matrix
-[b multiplied by the transpose of matrix [a] in
+[b multiplied by the transpose of matrix \underline{a} in
 that order, provided the order of the initial matrices continues to
 satisfy the rule for matrix multiplication, Eq. (A.2.8). In general,
 this property holds for any number of matrices; that is,
-$$([a][b][c]...[k])^T = [k]^T... [c]^T[b]^T[a]^T $$ 
+$$(\underline{a}\underline{b}\underline{c}...\underline{k})^T = \underline{k}^T... \underline{c}^T\underline{b}^T\underline{a}^T $$ 
 
 Note that the transpose of a column matrix is a row matrix. As a
 numerical example of the use of Eq.(A.2.10), let
 
-$$[a] = \sage{a}  [c] = \sage{c}$$
-First$$[a][b] = \sage{a}\sage{c}=\sage{a*c}$$
-Then $$([a][b])^T= \sage{(a*c).transpose()}$$
+$$\underline{a} = \sage{a}  \underline{c} = \sage{c}$$
+First$$\underline{a}\underline{b} = \sage{a}\sage{c}=\sage{a*c}$$
+Then $$(\underline{a}\underline{b})^T= \sage{(a*c).transpose()}$$
 
-Because $[b]^T$ and $[a]^T$ can be multiplied
+Because $\underline{b}^T$ and $\underline{a}^T$ can be multiplied
 according to the rule for matrix multiplication, We have
 
-$$ [b]^T[a]^T = \sage{a} \sage{c} = \sage{(a*c).transpose()}$$
+$$ \underline{b}^T\underline{a}^T = \sage{a} \sage{c} = \sage{(a*c).transpose()}$$
 
 Hence, on comparing Eqs.(A.2.12) and (A.2.13), we have shown (for this
 case) the validity of Eq. (A.2.10). A simple proof of the general
@@ -197,20 +203,20 @@ validity of Eq.(A.2.10) is left to your discretion.
 \subsection{Symmetric Matrices}
 If a square matrix is equal to its transpose, it is called a symmetric
 matrix, that is,
-$$ [a] = [a]^T $$
- if then [a] is a symmetric matrix. As an
+$$ \underline{a} = \underline{a}^T $$
+ if then \underline{a} is a symmetric matrix. As an
 example,
 
-$$[a]=\sage{matrix([[3,1,2],[1,4,0],[2,0,3]])}$$
+$$\underline{a}=\sage{matrix([[3,1,2],[1,4,0],[2,0,3]])}$$
 is a symmetric matrix because each element $a_{{ij}}$ equals $a_{{ji}}$ for $i
 \neq j$. In Eq. (A.2.14), note that the main diagonal running from the
 upper left corner to the lower right corner is the line of symmetry of
-the symmetric matrix [a]. Remember that the only a square
+the symmetric matrix \underline{a}. Remember that the only a square
 matrix can be symmetric.
 \subsection{Unit Matrix}
 The unit (or identity) matrix I is such that
 
-$$[a][I]=[I][a]=[a]$$
+$$\underline{a}\underline{I}=\underline{I}\underline{a}=\underline{a}$$
 
 The unit matrix acts in the same way that the number one acts in
 conventional multiplication. The unit matrix is always a square matrix
@@ -223,47 +229,70 @@ $$\sage{matrix.identity(3)}$$
 
 The inverse of a matrix is a matrix such that
 
-$$[a]^{-1}[a]=[a][a]^{-1}=[I]$$
-where the superscript, -1, denotes the inverse of [a] as $[a]^{-1}$.
+$$\underline{a}^{-1}\underline{a}=\underline{a}\underline{a}^{-1}=\underline{I}$$
+where the superscript, -1, denotes the inverse of \underline{a} as $\underline{a}^{-1}$.
 Section A.3 provides more information regarding the properties of the
 inverse of a matrix and gives a method for determining it.
 
 \subsection{Orthogonal Matrix}
-A matrix [T] is an orthogonal matrix if
-$$[T]^T[T] = [T][T]^T=1$$
+A matrix \underline{T} is an orthogonal matrix if
+$$\underline{T}^T\underline{T} = \underline{T}\underline{T}^T=1$$
 Hence, for an orthogonal matrix, we have
-$$[T]^{-1}=[T]^T$$
+$$\underline{T}^{-1}=\underline{T}^T$$
 
 An orthogonal matrix frequently used is the transformation or rotation
-matrix [T]. In two dimensional space, the transformation matrix
+matrix \underline{T}. In two dimensional space, the transformation matrix
 relates components of a vector in one coordinate system to components
 in another system. For instance, the displacement (and force as well)
-vector components of [d] expressed in the x-y system are related to
+vector components of \underline{d} expressed in the x-y system are related to
 those in the x-y system (Figure A-1 and Section 3.3) by
 
-$$\hat{d}=[T][d]$$
+$$\hat{d}=\underline{T}\underline{d}$$
 
 
 or
-where [T] is the square matrix on the right side of Eq. (A.2.20).
+where \underline{T} is the square matrix on the right side of Eq. (A.2.20).
 
 
 Another use of an orthogonal matrix is to change from the local
 stiffness matrix to a global stiffness matrix for an element. That is,
 given a local stiffness matrix $\hat{[h]}$ for an element, if the
 element is arbitrarily oriented in the x-y plane, then
-$$[k]=[T]^T \hat{k}[T]=[T]^{-1}\hat{k}[T]$$
+$$\underline{k}=\underline{T}^T \hat{k}\underline{T}=\underline{T}^{-1}\hat{k}\underline{T}$$
 
 Equation (A.2.21) is used throughout this text to express the
-stiffness matrix [k] in the x-y plane.
+stiffness matrix \underline{k} in the x-y plane.
 
-By further examination of [T], we see that the trigonometric terms in
-[T] can be interpreted as the direction cosines of line O$\hat{x}$ or
+By further examination of \underline{T}, we see that the trigonometric terms in
+\underline{T} can be interpreted as the direction cosines of line O$\hat{x}$ or
 $d{x}$, we have from Eq. (A.2.20).
 
-\begin{center}
-$<{t11}\hspace{0.5cm}{t12}>=<{cos\theta}\hspace{0.5cm}{sin\theta}>$
-\end{center}
+$$<{t11}\hspace{0.5cm}{t12}>=<{cos\theta}\hspace{0.5cm}{sin\theta}>$$
+and for Oy or dy, we have
+$$<{t21}\hspace{0.5cm}{t22}>=<{-sin\theta}\hspace{0.5cm}{cos\theta}>$$
+
+or unit vectors $\bar{i}$ and $\bar{j}$ can be represented in terms of
+unit vectors $\bar{\hat{i}}$ and $\bar{\hat{i}}$ [also see Section 3.3
+fro proof of Eq.(A.2.24) as
+$$\bar{\hat{i}} =icos\theta+jsin\theta$$
+
+$$\bar{\hat{j}} =-isin\theta+jcos\theta$$
+and hence
+$${t}^2_{11} + {t}^2_{12}=1 
+{t}^2_{21} + {t}^2_{22}=1$$
+and since these vectors $(\bar{\hat{i}}$ and $\bar{\hat{i}})$ are
+orthogonal, by the dot product, we have
+
+
+$$<{t}_{11} \bar{i} + {t}_{12} \bar{j}>.<{t}_{21} \bar{i} +
+{t}_{22} \bar{j}>$$
+
+or $${t}_{11}{t}_{21} + {t}_{12} {t}_{22}=0$$
+
+or we say \underline{T} is orthogonal and therefore $\underline{T}^T\underline{T}=\underline{T}\underline{T}^T=I$ and
+that the transpose is its inverse. That is,
+
+$$\underline{T}^T=\underline{T}^{-1}$$
 
 \subsection{Differentiating a Matrix}
 A matrix is differentiated by differentiating every element in matrix in hte conventional manner. For example, if
@@ -273,16 +302,17 @@ f=matrix([[x^3,2*x^2,3*x],[2*x^2,x^4,x],[3*x,x,x^5]])
 par=matrix([[x^2,y*x,z*x],[y*x,y^2,y*z],[z*x,y*z,z^2]])
 q=matrix([x,y])
 \end{sagesilent}
-$$[a]= \sage{f}$$
-the derivative $\frac{{\rm d}[a]}{{\rm d}x}$ is given by 
-$$ \frac{{\rm d}[a]}{{\rm d}x} = \sage{diff(f,x)}$$
+$$\underline{a}= \sage{f}$$
+the derivative $\frac{{
+\rm d}\underline{a}}{{\rm d}x}$ is given by 
+$$ \frac{{\rm d}\underline{a}}{{\rm d}x} = \sage{diff(f,x)}$$
 Similarly,the partial derivative of a matrix is 
 
-$$ \frac{\delta[a]}{\delta x}= \frac{\delta \sage{par} }{\delta x} = \sage{diff(par,x)} $$
+$$ \frac{\delta\underline{a}}{\delta x}= \frac{\delta \sage{par} }{\delta x} = \sage{diff(par,x)} $$
 
 In structural analysis theory, we sometimes differentiate an expression of the form 
 
-$$ U = \frac{1}{2} \sage{q}[a]=\left(\begin{array}{rr}a_{11} & a_{12} \\a_{21} & a_{22}\\ \end{array}\right)\sage{q.transpose()}$$
+$$ U =\left(\begin{array}{rr}a_{11} & a_{12} \\a_{21} & a_{22}\\ \end{array}\right)\sage{q.transpose()}$$
 
 where U might represent the strain energy in a bar. eqaution is known as a quadratic form. By matrix multiplication of eq , we obtain.
 
@@ -295,10 +325,203 @@ Eq in matrix form becomes
 $$\left(\begin{array}{rr} \frac{\delta U}{\delta x} \\ \frac{\delta U}{\delta y} \\ \end{array}\right) = \left(\begin{array}{rr}a_{11} & a_{12} \\a_{21} & a_{22}\\ \end{array}\right) \sage{q.transpose()}$$
 
 A general form of Eq is 
-$$ U = \frac{1}{2}{X}^T[a]{X}$$
+$$ U = \frac{1}{2}\{X\}^T\underline{a}\{X\}$$
 Then by comparing eq and eq , we obtain 
-$$\frac{ \delta U}{\delta x_{i}} = [a]{X}$$
+$$\frac{ \delta U}{\delta x_{i}} = \underline{a}\{X\}$$
 
-where $x_{i}$ denotes x and y. Here eq depends on matrix [a] being summetric.
+where $x_{i}$ denotes x and y. Here eq depends on matrix \underline{a} being summetric.
+
+\subsection{Integrating a Matrix}
+Just as in matrix differentiation, to integrate a matrix, we must
+integrate every element in the matrix in the conventional manner. For
+example, if
+$$ \underline{a} = \sage{f}$$
+we obtain the integration of $\underline{a}$ as
+
+$$\int \underline{a}dx = \sage{f}$$
+In our finite element formulation of equations, we often integrate an
+expression of the form
+$$\int \underline{X}^T\underline{a}\underline{X} dx dy $$
+The triple product in Eq. (A.2.37) will be symmetric if \underline{a} is
+symmetric. The form $\underline{X}^T\underline{a}\underline{X}$ is also called a quadratic form. For
+example, letting
+\begin{sagesilent}
+var('x1','x2','x3')
+X=matrix([x1,x2,x3])
+\end{sagesilent}
+$$\underline{a} = \sage{a} \underline{X}= \sage{X.transpose()}$$
+we obtain
+$$\{X\}^T\underline{a}\{X\}= \sage{X}\sage{a}\sage{X.transpose()}$$
+$$=\sage{X*a*X.transpose()}$$
+
+which is in quadratic form.
+
+
+\section{ cofactor or Adjoint Method to Determine the inverse of a Matrix}
+
+We will now introduce a method for finding the inverse of matrix. This
+method is useful for longhand determination of the inverse of smaller
+order square matrices (preferably of order 4$\times$4 or less). A
+matrix $\underline{a}$ must be square for us to determine its inverse.
+
+
+We must first define the determinant of a matrix. This concept is
+necessary in determining the inverse of a matrix by the cofactor
+method. A determinant is a \i{square array of elements expressed by}
+$$ |\underline {a}| = |\underline{a_{ij}}|$$
+where the straight vertical bar, $| |$, on on each side of the array denote
+the determinant. The resulting determinant of an array will be a
+single numerical value when the array is evaluated.
+
+To evaluated the determinant of $\underline{a}$, we must first determinant the
+cofactors of $\underline{a}_{ij}$.
+
+The cofactors of $\underline{a}_{ij}$ are given by
+
+$$\underline{c}_{ij}=(-1)^{i+j} |\underline{d}|$$
+
+
+where the matrix $\underline{d}$, called the first minor of $\underline{a}_{ij}$, is
+matrix $\underline{a}$ with row i and column j deleted. The inverse of matrix
+$\underline{a}$ is then given by
+
+
+$$\underline{a}^{-1}=\frac{C^{T}}{|\underline{a}|}$$
+
+
+where \underline{C} is the cofactor matrix and $|\underline{a}|$ is the determine the inverse of a matrix \underline{a} given by 
+\begin{sagesilent}
+a=matrix([[-1,3,-2],[2,-4,2],[0,4,1]])
+\end{sagesilent}
+$$\underline{a} = \sage{a} $$
+Using eq ,we find that the cofactors of matrix \underline{a} are 
+$$ C_{11} = (-1)^{1+1} \left|\begin{array}{rr} -4 & 2 \\4 & 1\\ \end{array}\right| = -12 $$ 
+$$ C_{12} = (-1)^{1+2} \left|\begin{array}{rr} 2 & 2 \\0 & 1\\ \end{array}\right| = -2 $$ 
+$$ C_{13} = (-1)^{1+3} \left|\begin{array}{rr} 2 & -4 \\0 & 4\\ \end{array}\right| = 8 $$ 
+$$ C_{21} = (-1)^{2+1} \left|\begin{array}{rr} 3 & -2 \\4 & 1\\ \end{array}\right| = -11 $$ 
+$$ C_{22} = (-1)^{2+2} \left|\begin{array}{rr} -1 & -2 \\0 & 1\\ \end{array}\right| = -1 $$
+$$ C_{23} = (-1)^{2+3} \left|\begin{array}{rr} -1 & 3 \\0 & 4\\ \end{array}\right| = 4 $$  
+
+similarly,
+
+$$ c_{31} = -2  c_{32} = -2  c_{33} = -2 $$
+
+Therefore, from eq and we have 
+$$ \underline{c} = \sage{a.adjoint()}$$
+the determinant of \underline{a} is then 
+$${|\underline{a}|}=\sum_{j=1}^{n}a_{ij}C_{ij}$$ with i any row
+number $(1\leq i n)$
+
+
+or
+
+
+$${|\underline{a}|}=\sum_{j=1}^{n}a_{ji}C_{ji}$$ with i any column
+number $(1\leq i\leq n)$
+For instance, if we choose the first of \underline{a} and \underline{c}, then i=1
+inEq.(A.3.8), and j is summed from 1 to 3 such that
+
+
+$$|\underline{a}|=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13} $$
+
+$$ |\underline{a}| = \sage{a.det()}$$
+
+$$ \underline{a^{-1}}=\frac{\underline{C}^T}{|\underline{a}|}=\sage{a.inverse()} $$
+
+We can then check that
+
+$$\underline{a}{a}^{-1}=\sage{matrix.identity(3)}$$
+
+
+The transpose of the cofactor matrix is often defined as the adjoint
+matrix; that is,
+
+$$\ adj\underline{a}=\underline{C}^T $$
+
+Therefore, an alternative equation for the inverse of \underline{a} is
+
+
+$$\underline{a}^{-1}=\frac {adj \underline{a}}{|\underline{a}|}$$
+
+
+An important property associated with the determinant of a matrix is
+that if the determinant of a matrix is zero ; that is,
+$|\underline{a}| =0$ , then the matrix is said to be singular. A
+singular matrix does not have an inverse. The stiffness matrices used
+in the finite element method are singular until sufficient boundary
+conditions (support conditions) are applied. This characteristics of
+the stiffness matrix is further discussed in the text.
+The inverse of a nonsingular square matrix \underline{a} can be found
+by the method of row reduction (sometimes called the Gauss-Jordan
+method) by performing identical simultaneous operations on the matrix
+\underline{a} becomes an identity matrix and the original identity
+matrix becomes the inverse of \underline{a}.
+
+\section{Inverse of a Matrix by Row Reduction}
+A numerical example will best illustrate the procedure. We begin by
+converting matrix \underline{a} to an upper triangular form by setting
+all elements below the main diagonal equal to zero, starting with the
+first column and continuing with succeeding columns. We then proceed
+from the last column to the first, setting all elements above the main
+diagonal equal to zero.
+\begin{sagesilent}
+a=matrix([[2,2,1],[2,1,0],[1,1,1]])
+\end{sagesilent}
+We will invert the following matrix by row reduction.
+$$\underline{a} = \sage{a}$$
+To find $\underline{a^{-1}}$, we need to find $\underline{x}$ such that
+$\underline{a}\underline{x}=I$, where
+$$\underline{x}=\left(\begin{array}{rrr}
+x_{11} & x_{12} & x_{13} \\
+x_{21} & x_{22} & x_{23} \\
+x_{31} & x_{32} & x_{33} \\
+a_{41} & a_{42} & a_{43}  \\
+\end{array}\right)$$
+
+That is,solve$$ \sage{a}\underline{x} = \sage{matrix.identity(3)}$$
+We begin by writing \underline{a} and \underline{I} side by side as
+$$\sage{a.augment(matrix.identity(3))}$$
+\begin{sagesilent}
+b=matrix([[1,1,1/2],[2,1,0],[1,1,1]])
+b1=matrix([[1/2,0,0],[0,1,0],[0,0,1]])
+c=matrix([[1,1,1/2],[0,-1,-1],[1,1,1]])
+c1=matrix([[1/2,0,0],[-1,1,0],[0,0,1]])
+\end{sagesilent}
+
+where the vertical dashed line separates \underline{a} and \underline{I}.
+
+
+1. Divide the first row of Eq. (A.4.2) by 2.
+$$\sage{b.augment(b1)}$$
+2.Multiply the first row of Eq. (A.4.3) by -2 and add the result to
+the second row.
+$$\sage{c.augment(c1)}$$
+
+3. Subtract the first row of Eq. (A.4.4) from the third row.
+
+
+4. Multiply the second row of Eq. (A.2.5) by -1 and the third row by 2.
+
+
+5. Subtract the third row of Eq. (A.4.6) from the second row.
+
+6. Multiply the third row of Eq. (A.4.7) by $-\frac{1}{2}$ and add the
+result to the first row.
+
+
+7. Subtract the second row of Eq. (A.4.8) from the first row.
+$$ \sage{(matrix.identity(QQ,3)).augment(a.inverse())}$$
+
+The replacement of \underline{a} by the inverse matrix is now
+complete. The inverse of \underline{a} is then the right side of
+Eq.(A.4.9); that is,
+
+
+
+$$\underline{a}^{-1} = \sage{a.inverse()}$$
+For additional information regarding matrix algebra, consult Reference
+[1] and [2].
+
+
 
 \end{document}
