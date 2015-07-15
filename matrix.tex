@@ -6,7 +6,7 @@
 }
 \title{\textbf{Matrix}}
 
-\author{Amarjeet singh ,AVI kaur}
+\author{Amarjeet singh and Avi kaur}
 \begin{document}
 \begin{titlepage}
 \maketitle
@@ -50,25 +50,22 @@ e=matrix([[7,4,4],[2,4,5],[3,5,6]])
 \end{center}
 where [a] has three rows and three columns.
 
-A square matrix [b] is given by :
+A square matrix [b] is given by:
 \begin{center}
 [b]=$\sage{b}$
 \end{center}
-
 where [b] has two rows and two columns.
 
-A row matrix [c] is given by :
+A row matrix [c] is given by:
 \begin{center}
 [c]=$\sage{c}$
 \end{center}
-
 where [c] has one rows and three columns.
 
-A columns matrix [b] is given by :
+A columns matrix [b] is given by:
 \begin{center}
 [d]=$\sage{d}$
 \end{center}
-
 where [d] has four rows and one columns.
 
 Matrices and matrix notation are often used to express algebraic equations in compact form and are frequently used in the finite element formulation of equations.
@@ -265,7 +262,43 @@ By further examination of [T], we see that the trigonometric terms in
 $d{x}$, we have from Eq. (A.2.20).
 
 \begin{center}
-$\textless{t11}\hspace{0.5cm}{t12}\textgreater=\textless{cos\theta}\hspace{0.5cm}{sin\theta}\textgreater$
+$<{t11}\hspace{0.5cm}{t12}>=<{cos\theta}\hspace{0.5cm}{sin\theta}>$
 \end{center}
+
+\subsection{Differentiating a Matrix}
+A matrix is differentiated by differentiating every element in matrix in hte conventional manner. For example, if
+\begin{sagesilent}
+x,y,z=var('x','y','z')
+f=matrix([[x^3,2*x^2,3*x],[2*x^2,x^4,x],[3*x,x,x^5]])
+par=matrix([[x^2,y*x,z*x],[y*x,y^2,y*z],[z*x,y*z,z^2]])
+q=matrix([x,y])
+\end{sagesilent}
+$$[a]= \sage{f}$$
+the derivative $\frac{{\rm d}[a]}{{\rm d}x}$ is given by 
+$$ \frac{{\rm d}[a]}{{\rm d}x} = \sage{diff(f,x)}$$
+Similarly,the partial derivative of a matrix is 
+
+$$ \frac{\delta[a]}{\delta x}= \frac{\delta \sage{par} }{\delta x} = \sage{diff(par,x)} $$
+
+In structural analysis theory, we sometimes differentiate an expression of the form 
+
+$$ U = \frac{1}{2} \sage{q}[a]=\left(\begin{array}{rr}a_{11} & a_{12} \\a_{21} & a_{22}\\ \end{array}\right)\sage{q.transpose()}$$
+
+where U might represent the strain energy in a bar. eqaution is known as a quadratic form. By matrix multiplication of eq , we obtain.
+
+$$ U = \frac{1}{2}(a_{{11}}x^2 +2a_{{12}}xy + a_{{22}}y^2)$$
+
+Differentiating U now yields 
+$$ \frac{\delta U}{\delta x} = a_{{11}}x + a_{{12}}y $$
+$$ \frac{\delta U}{\delta y} = a_{{12}}x + a_{{22}}y $$ 
+Eq in matrix form becomes
+$$\left(\begin{array}{rr} \frac{\delta U}{\delta x} \\ \frac{\delta U}{\delta y} \\ \end{array}\right) = \left(\begin{array}{rr}a_{11} & a_{12} \\a_{21} & a_{22}\\ \end{array}\right) \sage{q.transpose()}$$
+
+A general form of Eq is 
+$$ U = \frac{1}{2}{X}^T[a]{X}$$
+Then by comparing eq and eq , we obtain 
+$$\frac{ \delta U}{\delta x_{i}} = [a]{X}$$
+
+where $x_{i}$ denotes x and y. Here eq depends on matrix [a] being summetric.
 
 \end{document}
