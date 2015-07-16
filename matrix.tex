@@ -2,7 +2,7 @@
 \usepackage{sagetex}
 \usepackage{amsmath}
 \usepackage{geometry}
-\usepackage{graphicx}
+\usepackage{graphicx}	
 \geometry{a4paper, margin=1.5in,
  top=0.5in,
  bottom=0.5in}
@@ -83,9 +83,9 @@ where \underline{d} has four rows and one columns.
 
 Matrices and matrix notation are often used to express algebraic equations in compact form and are frequently used in the finite element formulation of equations.
 \section{Matrix Operations}
-We will noe presentsome common matrix operations that will be used in this text.
+We will now present some common matrix operations that will be used in this text.
 \subsection{Multiplication of a Matrix by a Scalar}
-If we have a scalar k and \underline{c} matrix athen the product $a = k \times \underline{c} $ is given by
+If we have a scalar k and \underline{c} matrix a then the product $a = k \times \underline{c} $ is given by
 \begin{equation}[d_{{ij}} = Ka_{{ij}} \label{eq:element}
 \end{equation}
 e.g
@@ -248,31 +248,42 @@ those in the x-y system Figure \ref{fig:orthof} and \ref{last} by
 
 
 or
-\begin{equation} \label{eq:ortho}\end{equation}
+
+\begin{eqnarray}
+\left(\begin{array}{rr}
+\hat{d_{x}} \\
+\hat{d_{y}} \\
+\end{array}\right) = \left(\begin{array}{rr}
+cos\theta & sin\theta \\
+-sin\theta & cos\theta  \\
+\end{array}\right)
+\left(\begin{array}{rr}
+d_{x} \\
+d_{y} \\
+\end{array}\right)
+\label{eq:ortho}\end{eqnarray}
 where \underline{T} is the square matrix on the right side of \lab{eq:ortho}.
 
 
 Another use of an orthogonal matrix is to change from the local
 stiffness matrix to a global stiffness matrix for an element. That is,
-given a local stiffness matrix $\hat{[h]}$ for an element, if the
+given a local stiffness matrix $\hat{\underline{h}}$ for an element, if the
 element is arbitrarily oriented in the x-y plane, then
 \begin{equation}\underline{k}=\underline{T}^T \hat{k}\underline{T}=\underline{T}^{-1}\hat{k}\underline{T}\label{eq:ortho2}\end{equation}
 
 \lab{eq:ortho2} is used throughout this text to express the
 stiffness matrix \underline{k} in the x-y plane.
 
-\begin{figure}
-\includegraphics[scale=0.5]{ortho.PNG}
-\caption{Components of vector in x-y and $\hat{x}-\hat{y}$ coordinates} 
-\label{fig:orthof}
-\end{figure}
-
-
 By further examination of \underline{T}, we see that the trigonometric terms in
 \underline{T} can be interpreted as the direction cosines of line O$\hat{x}$ or
 $d{x}$, we have from \lab{eq:ortho}
 
 \begin{equation}<{t11}\hspace{0.5cm}{t12}>=<{cos\theta}\hspace{0.5cm}{sin\theta}>\end{equation}
+\begin{figure}
+\includegraphics[scale=0.5]{ortho.PNG}
+\caption{Components of vector in x-y and $\hat{x}-\hat{y}$ coordinates} 
+\label{fig:orthof}
+\end{figure}
 and for Oy or dy, we have
 \begin{equation}<{t21}\hspace{0.5cm}{t22}>=<{-sin\theta}\hspace{0.5cm}{cos\theta}>\end{equation}
 or unit vectors $\bar{i}$ and $\bar{j}$ can be represented in terms of
@@ -289,16 +300,14 @@ orthogonal, by the dot product, we have
 
 \begin{equation}<{t}_{11} \bar{i} + {t}_{12} \bar{j}>.<{t}_{21} \bar{i} +
 {t}_{22} \bar{j}>\end{equation}
-
 or \begin{equation}{t}_{11}{t}_{21} + {t}_{12} {t}_{22}=0\end{equation}
-
 or we say \underline{T} is orthogonal and therefore $\underline{T}^T\underline{T}=\underline{T}\underline{T}^T=I$ and
 that the transpose is its inverse. That is,
 
 \begin{equation}\underline{T}^T=\underline{T}^{-1}\end{equation}
 
 \subsection{Differentiating a Matrix}
-A matrix is differentiated by differentiating every element in matrix in hte conventional manner. For example, if
+A matrix is differentiated by differentiating every element in matrix in the conventional manner. For example, if
 \begin{sagesilent}
 x,y,z=var('x','y','z')
 f=matrix([[x^3,2*x^2,3*x],[2*x^2,x^4,x],[3*x,x,x^5]])
@@ -310,17 +319,13 @@ the derivative $\frac{{
 \rm d}\underline{a}}{{\rm d}x}$ is given by 
 \begin{equation} \frac{{\rm d}\underline{a}}{{\rm d}x} = \sage{diff(f,x)}\end{equation}
 Similarly,the partial derivative of a matrix is 
-
 \begin{equation} \frac{\delta\underline{a}}{\delta x}= \frac{\delta \sage{par} }{\delta x} = \sage{diff(par,x)} \end{equation}
-
 In structural analysis theory, we sometimes differentiate an expression of the form 
 
 \begin{equation} U =\left(\begin{array}{rr}a_{11} & a_{12} \\a_{21} & a_{22}\\ \end{array}\right)\sage{q.transpose()}\label{eq:diff}\end{equation}
-
 where U might represent the strain energy in a bar.\lab{eq:diff} is known as a quadratic form. By matrix multiplication of \lab{eq:diff}, we obtain.
 
 \begin{equation} U = \frac{1}{2}(a_{{11}}x^2 +2a_{{12}}xy + a_{{22}}y^2)\end{equation}
-
 Differentiating U now yields 
 \begin{equation} \frac{\delta U}{\delta x} = a_{{11}}x + a_{{12}}y  \frac{\delta U}{\delta y} = a_{{12}}x + a_{{22}}y \label{eq:diff2}\end{equation} 
 \lab{eq:diff2} in matrix form becomes
@@ -387,29 +392,23 @@ a=matrix([[-1,3,-2],[2,-4,2],[0,4,1]])
 \end{sagesilent}
 \begin{equation}\underline{a} = \sage{a} \end{equation}
 Using eq ,we find that the cofactors of matrix \underline{a} are 
-\begin{eqnarray} C_{11} = (-1)^{1+1} \left|\begin{array}{rr} -4 & 2 \\4 & 1\\ \end{array}\right| = -12 \nonumber 
-\\ C_{12} = (-1)^{1+2} \left|\begin{array}{rr} 2 & 2 \\0 & 1\\ \end{array}\right| = -2 \nonumber 
-\\ C_{13} = (-1)^{1+3} \left|\begin{array}{rr} 2 & -4 \\0 & 4\\ \end{array}\right| = 8 \nonumber 
-\\ C_{21} = (-1)^{2+1} \left|\begin{array}{rr} 3 & -2 \\4 & 1\\ \end{array}\right| = -11 \nonumber 
-\\C_{22} = (-1)^{2+2} \left|\begin{array}{rr} -1 & -2 \\0 & 1\\ \end{array}\right| = -1 \nonumber 
-\\ C_{23} = (-1)^{2+3} \left|\begin{array}{rr} -1 & 3 \\0 & 4\\ \end{array}\right| = 4 \label{eq:cofa}\end{eqnarray}  
-
+\begin{eqnarray}
+  C_{11} = (-1)^{1+1} \left|\begin{array}{rr} -4 &  2 \\4 & 1\\ \end{array}\right| = -12 \nonumber 
+\\C_{12} = (-1)^{1+2} \left|\begin{array}{rr}  2 &  2 \\0 & 1\\ \end{array}\right| =  -2 \nonumber 
+\\C_{13} = (-1)^{1+3} \left|\begin{array}{rr}  2 & -4 \\0 & 4\\ \end{array}\right| =   8 \nonumber 
+\\C_{21} = (-1)^{2+1} \left|\begin{array}{rr}  3 & -2 \\4 & 1\\ \end{array}\right| = -11 \nonumber 
+\\C_{22} = (-1)^{2+2} \left|\begin{array}{rr} -1 & -2 \\0 & 1\\ \end{array}\right| =  -1 \nonumber 
+\\C_{23} = (-1)^{2+3} \left|\begin{array}{rr} -1 &  3 \\0 & 4\\ \end{array}\right| =   4 \label{eq:cofa}\end{eqnarray}  
 similarly,
-
-\begin{eqnarray} c_{31} = -2 \\ c_{32} = -2  \\c_{33} = -2 \label{eq:cofa2}\end{eqnarray}
-
+\begin{eqnarray} c_{31} = -2 \nonumber \\ c_{32} = -2 \nonumber \\c_{33} = -2 \label{eq:cofa2}\end{eqnarray}
 Therefore, from \lab{eq:cofa} and \lab{eq:cofa2} ,we have 
 \begin{equation} \underline{c} = \sage{a.adjoint()}\end{equation}
 the determinant of \underline{a} is then 
-\begin{equation}{|\underline{a}|}=\sum_{j=1}^{n}a_{ij}C_{ij} \text{with i any row
-number} (1 < i < n) \label{weq:cofa4}\end{equation}
-
-
+\begin{equation}{|\underline{a}|}=\sum_{j=1}^{n}a_{ij}C_{ij} \text{ with i any row
+number} (1 < i < n)\label{weq:cofa4}\end{equation}
 or
-
-
-\begin{equation}{|\underline{a}|}=\sum_{j=1}^{n}a_{ji}C_{ji} \text{with i any column
-number }(1\leq i\leq n) \end{equation} 
+\begin{equation}{|\underline{a}|}=\sum_{j=1}^{n}a_{ji}C_{ji} \text{ with i any column
+number}(1 < i < n) \end{equation} 
 For instance, if we choose the first of \underline{a} and \underline{c}, then i=1
 in \lab{weq:cofa4}, and j is summed from 1 to 3 such that
 \begin{eqnarray}|\underline{a}|=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13} \nonumber \\ & = & \sage{a.det()}\end{eqnarray}
