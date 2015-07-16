@@ -2,6 +2,7 @@
 \usepackage{sagetex}
 \usepackage{amsmath}
 \usepackage{geometry}
+\usepackage{graphicx}
 \geometry{a4paper, margin=1.5in,
  top=0.5in,
  bottom=0.5in}
@@ -39,6 +40,7 @@ a_{41} & a_{42} & a_{43} & a_{44} & ... & a_{4n} \\
 a_{m1} & a_{m2} & a_{m3} & a_{m4} & ... & a_{mn} \\
 \end{array}\right) \label{eq:general}          
 \end{equation}
+
 
 If $\sage{m!=n}$ in matrix \lab{eq:general}, the matrix is called rectangular. If $\sage{m==1}$ and $\sage{n>1}$, the elements of Eq.\lab{eq:general} form a single row called a row matrix. If $\sage{m>1}$, and $\sage{n==1}$ the elements form single columns called a columns matrix. If $\sage{m==n}$, the array is called a square matrix.
 Matrix is usually denoted by \underline{d} or \underline{d}.
@@ -240,7 +242,7 @@ matrix \underline{T}. In two dimensional space, the transformation matrix
 relates components of a vector in one coordinate system to components
 in another system. For instance, the displacement (and force as well)
 vector components of \underline{d} expressed in the x-y system are related to
-those in the x-y system figure and \ref{last} by
+those in the x-y system Figure \ref{fig:orthof} and \ref{last} by
 
 \begin{equation}\hat{d}=\underline{T}\underline{d}\end{equation}
 
@@ -259,6 +261,13 @@ element is arbitrarily oriented in the x-y plane, then
 \lab{eq:ortho2} is used throughout this text to express the
 stiffness matrix \underline{k} in the x-y plane.
 
+\begin{figure}
+\includegraphics[scale=0.5]{ortho.PNG}
+\caption{Components of vector in x-y and $\hat{x}-\hat{y}$ coordinates} 
+\label{fig:orthof}
+\end{figure}
+
+
 By further examination of \underline{T}, we see that the trigonometric terms in
 \underline{T} can be interpreted as the direction cosines of line O$\hat{x}$ or
 $d{x}$, we have from \lab{eq:ortho}
@@ -266,7 +275,6 @@ $d{x}$, we have from \lab{eq:ortho}
 \begin{equation}<{t11}\hspace{0.5cm}{t12}>=<{cos\theta}\hspace{0.5cm}{sin\theta}>\end{equation}
 and for Oy or dy, we have
 \begin{equation}<{t21}\hspace{0.5cm}{t22}>=<{-sin\theta}\hspace{0.5cm}{cos\theta}>\end{equation}
-
 or unit vectors $\bar{i}$ and $\bar{j}$ can be represented in terms of
 unit vectors $\bar{\hat{i}}$ and $\bar{\hat{i}}$.
 \begin{equation}\bar{\hat{i}} =icos\theta+jsin\theta\end{equation}
