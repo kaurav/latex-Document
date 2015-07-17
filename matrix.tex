@@ -42,9 +42,10 @@ a_{m1} & a_{m2} & a_{m3} & a_{m4} & ... & a_{mn} \\
 \end{equation}
 
 
-If $\sage{m!=n}$ in matrix \lab{eq:general}, the matrix is called rectangular. If $\sage{m==1}$ and $\sage{n>1}$, the elements of Eq.\lab{eq:general} form a single row called a row matrix. If $\sage{m>1}$, and $\sage{n==1}$ the elements form single columns called a columns matrix. If $\sage{m==n}$, the array is called a square matrix.
-Matrix is usually denoted by \underline{d} or \underline{d}.
-we represent the elements by $a_{{ij}}$, where the subcripts i and j indicate the row number and the column number.
+If $\sage{m!=n}$ in matrix \lab{eq:general}, the matrix is called rectangular. If $\sage{m==1}$ and $\sage{n>1}$, the elements of \lab{eq:general} form a single row called a row matrix. If $\sage{m>1}$, and $\sage{n==1}$ the elements form single columns called a columns matrix. If $\sage{m==n}$, the array is called a square matrix.
+Matrix is usually denoted by [a] or \underline{d}.
+
+We represent the elements by $a_{{ij}}$, where the subcripts i and j indicate the row number and the column number.
 
 A rectangular matix \underline{a} is given by : 
 \begin{sagesilent}
@@ -84,7 +85,7 @@ Matrices and matrix notation are often used to express algebraic equations in co
 \section{Matrix Operations}
 We will now present some common matrix operations that will be used in this text.
 \subsection{Multiplication of a Matrix by a Scalar}
-If we have a scalar k and \underline{c} matrix a then the product $a = k \times \underline{c} $ is given by
+If we have a scalar k and a matrix \underline{c} then the product $a = k \times \underline{c} $ is given by
 \begin{equation}d_{{ij}} = Ka_{{ij}} \label{eq:element}
 \end{equation}
 e.g
@@ -102,7 +103,7 @@ $$\underline{c}=\sage{a} + \sage{e}=\sage{a+e}$$
 Again,remember that the matrix \underline{a},\underline{b} and \underline{c} must all be same. For e.g., a $ 2 \times 2 $ marix cannot be added to a $ 3 \times 3 $ matrix.
 
 \subsection{Multiplications of Matrix}
-For two matrices a and b to be multiplied in the order shown in \lab{eq:multi}, the number of columns in a must equal the number of rows in b. For
+For two matrices \underline{a} and \underline{b} to be multiplied in the order shown in \lab{eq:multi}, the number of columns in \underline{a} must equal the number of rows in b. For
 
 \begin{equation}\underline{c} = \underline{a} \times \underline{b}\label{eq:multi}\end{equation}
 
@@ -110,7 +111,7 @@ If \underline{a} is an M x N matrix, then \underline{b} must have n
 rows. Using subscript notation, we can write the product of matrices
 \underline{a} and \underline{b} as
 
-\begin{equation}[c_{{ij}}] = \sum_{e=1}^{n} {a_{ie}}{b_{ej}}\end{equation}
+\begin{equation}[c_{{ij}}] = \sum_{e=1}^{n} {a_{ie}}{b_{ej}}\end  {equation}
 
 where n is the total number of columns in \underline{a} or of rows in
 \underline{b}. For matrix \underline{a} of order 2x2 and matrix
@@ -123,19 +124,13 @@ a_{21} \times b_{11} + a_{22} \times b_{21} & a_{21} \times b_{12} + a_{22} \tim
 \end{array}\right).\end{equation}
 
 for example, let 
-
-\begin{center}
-\underline{a} = $\sage{a}$
-
-\underline{b} = $\sage{e}$
-
-
-\[\underline{c} = \underline{a} \times \underline{b}\]
-
-
-\underline{c} = $\sage{a*e}$
-\end{center}
-
+$$
+\underline{a} = \sage{a}\nonumber 
+\underline{b} = \sage{e}\nonumber
+$$
+\begin{eqnarray}
+\underline{c} =\underline{a} \times \underline{b} = \sage{a*e}
+\end{eqnarray}
 In general, matrix multiplication is not commutative; that is,
 
 \begin{equation}\underline{a}\underline{b} \neq \underline{b}\underline{a} \end{equation}
@@ -150,8 +145,8 @@ where the product matrix \underline{c} will be of order $i \times j$;
 that is, it will have the same number of rows as matrix \underline{a}
 and the same number of columns as matrix \underline{b}.
 
-\subsection{Transpose}
-Any matrix, Whether a row, column, or rectangular matrix, can be
+\subsection{Transpose of Matrix}
+Any matrix, whether a row, column, or rectangular matrix, can be
 transposed. This operation is frequently used in finite element
 equation formulations. The transpose of a matrix \underline{a} is
 commonly denoted by $\underline{a}^T$. The superscript T is used to
@@ -175,10 +170,10 @@ transpose is
 \end{equation}
 
 That is, the transpose of the product of matrices \underline{a} and
-[b is equal to the transpose of the latter matrix
+b is equal to the transpose of the latter matrix
 [b multiplied by the transpose of matrix \underline{a} in
 that order, provided the order of the initial matrices continues to
-satisfy the rule for matrix multiplication,\lab{eq:genmulti} In general,
+satisfy the rule for matrix multiplication,\lab{eq:genmulti}. In general,
 this property holds for any number of matrices; that is,
 \begin{equation}(\underline{a}\underline{b}\underline{c}...\underline{k})^T = \underline{k}^T... \underline{c}^T\underline{b}^T\underline{a}^T \end{equation} 
 
@@ -268,7 +263,7 @@ Another use of an orthogonal matrix is to change from the local
 stiffness matrix to a global stiffness matrix for an element. That is,
 given a local stiffness matrix $\hat{\underline{h}}$ for an element, if the
 element is arbitrarily oriented in the x-y plane, then
-\begin{equation}\underline{k}=\underline{T}^T \hat{k}\underline{T}=\underline{T}^{-1}\hat{k}\underline{T}\label{eq:ortho2}\end{equation}
+\begin{equation}\underline{k}=\underline{T}^T \hat{\underline{k}}\underline{T}=\underline{T}^{-1}\hat{\underline{k}}\underline{T}\label{eq:ortho2}\end{equation}
 
 \lab{eq:ortho2} is used throughout this text to express the
 stiffness matrix \underline{k} in the x-y plane.
