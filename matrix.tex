@@ -202,10 +202,10 @@ where n is the total number of columns in \underline{a} or of rows in
 have
 
 \begin{equation}
-	\underline{c}=\left(\begin{array}{rrrrrr}
+	\underline{c}=\left[\begin{array}{rrrrrr}
 	a_{11} \times b_{11} + a_{12} \times b_{21} & a_{11} \times b_{12} + a_{12} \times b_{22}\\
 	a_{21} \times b_{11} + a_{22} \times b_{21} & a_{21} \times b_{12} + a_{22} \times b_{22}\\
-\end{array}\right).
+\end{array}\right].
 \end{equation}
 
 for example, let:
@@ -405,17 +405,17 @@ those in the x-y system Figure \ref{fig:orthof} and \ref{last} by
 or
 
 \begin{eqnarray}
-	\left(\begin{array}{rr}
+	\left\{\begin{array}{rr}
 	\hat{d_{x}} \\
 	\hat{d_{y}} \\
-\end{array}\right) = \left(\begin{array}{rr}
+\end{array}\right\} = \left[\begin{array}{rr}
 	cos\theta & sin\theta \\
 	-sin\theta & cos\theta  \\
-\end{array}\right)
-	\left(\begin{array}{rr}
+\end{array}\right]
+	\left\{\begin{array}{rr}
 	d_{x} \\
 	d_{y} \\
-\end{array}\right)
+\end{array}\right\}
 	\label{eq:ortho}
 \end{eqnarray}
 where \underline{T} is the square matrix on the right side of \lab{eq:ortho}.
@@ -527,9 +527,9 @@ In structural analysis theory,
 we sometimes differentiate an expression of the form 
 
 \begin{equation}
-	U =\sage{q}\left(\begin{array}{rr}a_{11} & a_{12}\\
+	U =\sage{q}\left[\begin{array}{rr}a_{11} & a_{12}\\
 	a_{21} & a_{22}\\ 
-	\end{array}\right)\sage{q.transpose()}
+	\end{array}\right]\sage{q.transpose()}
 \label{eq:diff}
 \end{equation}
 where U might represent the strain energy in 
@@ -549,11 +549,11 @@ Differentiating U now yields
 	\lab{eq:diff2} in matrix form becomes
 
 \begin{equation}
-	\left(\begin{array}{rr} \frac{\delta U}{\delta x} \\
+	\left\{\begin{array}{rr} \frac{\delta U}{\delta x} \\
 	\frac{\delta U}{\delta y} \\ 
-	\end{array}\right) = \left(\begin{array}{rr}a_{11} & a_{12} \\
+	\end{array}\right\} = \left[\begin{array}{rr}a_{11} & a_{12} \\
 	a_{21} & a_{22}\\ 
-	\end{array}\right) \sage{q.transpose()}\label{eq:diff3}
+	\end{array}\right] \sage{q.transpose()}\label{eq:diff3}
 \end{equation}
 
 A general form of \lab{eq:diff} is 
@@ -771,12 +771,12 @@ To find $\underline{a}^{-1}$, we need to find $\underline{x}$ such that
 $\underline{a}\underline{x}=I$, where
 
 \begin{equation}
-	\underline{x}=\left(\begin{array}{rrr}
+	\underline{x}=\left[\begin{array}{rrr}
 	x_{11} & x_{12} & x_{13} \\
 	x_{21} & x_{22} & x_{23} \\
 	x_{31} & x_{32} & x_{33} \\
 	a_{41} & a_{42} & a_{43}  \\
-	\end{array}\right)
+	\end{array}\right]
 \end{equation}
 
 That is,solve\begin{equation} \sage{a}\underline{x} = \sage{matrix.identity(3)}\end{equation}
