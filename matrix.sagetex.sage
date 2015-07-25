@@ -7,56 +7,56 @@ try:
  m=var('m')
  n=var('n')
 except:
- _st_.goboom(47)
+ _st_.goboom(48)
 _st_.blockend()
 try:
  _st_.inline(0, latex(m))
 except:
- _st_.goboom(52)
+ _st_.goboom(53)
 try:
  _st_.inline(1, latex(n))
 except:
- _st_.goboom(52)
+ _st_.goboom(53)
 try:
  _st_.inline(2, latex(m))
 except:
- _st_.goboom(53)
+ _st_.goboom(54)
 try:
  _st_.inline(3, latex(n))
 except:
- _st_.goboom(53)
+ _st_.goboom(54)
 try:
  _st_.inline(4, latex(m))
 except:
- _st_.goboom(55)
+ _st_.goboom(56)
 try:
  _st_.inline(5, latex(m))
 except:
- _st_.goboom(55)
+ _st_.goboom(56)
 try:
  _st_.inline(6, latex(m!=n))
 except:
- _st_.goboom(70)
+ _st_.goboom(72)
 try:
  _st_.inline(7, latex(m==1))
 except:
- _st_.goboom(71)
+ _st_.goboom(73)
 try:
  _st_.inline(8, latex(n>1))
 except:
- _st_.goboom(72)
+ _st_.goboom(74)
 try:
  _st_.inline(9, latex(m>1))
 except:
- _st_.goboom(73)
+ _st_.goboom(75)
 try:
  _st_.inline(10, latex(n==1))
 except:
- _st_.goboom(74)
+ _st_.goboom(76)
 try:
  _st_.inline(11, latex(m==n))
 except:
- _st_.goboom(75)
+ _st_.goboom(77)
 _st_.blockbegin()
 try:
  a=matrix([[1,2,3],[1,2,4],[6,2,3]])
@@ -65,116 +65,116 @@ try:
  d=matrix([[3,4,1,2]])
  e=matrix([[7,4,4],[2,4,5],[3,5,6]])
 except:
- _st_.goboom(100)
+ _st_.goboom(102)
 _st_.blockend()
 try:
  _st_.inline(12, latex(a))
 except:
- _st_.goboom(102)
+ _st_.goboom(104)
 try:
  _st_.inline(13, latex(b))
 except:
- _st_.goboom(110)
+ _st_.goboom(112)
 try:
  _st_.inline(14, latex(c))
 except:
- _st_.goboom(117)
+ _st_.goboom(119)
 try:
  _st_.inline(15, latex(d))
 except:
- _st_.goboom(124)
+ _st_.goboom(126)
 try:
  _st_.inline(16, latex(a))
 except:
- _st_.goboom(155)
+ _st_.goboom(158)
 try:
  _st_.inline(17, latex(4*a))
 except:
- _st_.goboom(159)
+ _st_.goboom(162)
 try:
  _st_.inline(18, latex(a))
 except:
- _st_.goboom(180)
+ _st_.goboom(183)
 try:
  _st_.inline(19, latex(e))
 except:
- _st_.goboom(181)
+ _st_.goboom(184)
 try:
  _st_.inline(20, latex(a))
 except:
- _st_.goboom(182)
+ _st_.goboom(185)
 try:
  _st_.inline(21, latex(e))
 except:
- _st_.goboom(182)
+ _st_.goboom(185)
 try:
  _st_.inline(22, latex(a+e))
 except:
- _st_.goboom(182)
+ _st_.goboom(185)
 try:
  _st_.inline(23, latex(a))
 except:
- _st_.goboom(229)
+ _st_.goboom(234)
 try:
  _st_.inline(24, latex(e))
 except:
- _st_.goboom(230)
+ _st_.goboom(235)
 try:
  _st_.inline(25, latex(a*e))
 except:
- _st_.goboom(234)
+ _st_.goboom(239)
 try:
  _st_.inline(26, latex(a))
 except:
- _st_.goboom(277)
+ _st_.goboom(282)
 try:
  _st_.inline(27, latex(a.transpose()))
 except:
- _st_.goboom(278)
+ _st_.goboom(283)
 try:
  _st_.inline(28, latex(a))
 except:
- _st_.goboom(304)
+ _st_.goboom(310)
 try:
  _st_.inline(29, latex(c))
 except:
- _st_.goboom(304)
+ _st_.goboom(310)
 try:
  _st_.inline(30, latex(a))
 except:
- _st_.goboom(306)
+ _st_.goboom(312)
 try:
  _st_.inline(31, latex(c))
 except:
- _st_.goboom(306)
+ _st_.goboom(312)
 try:
  _st_.inline(32, latex(a*c))
 except:
- _st_.goboom(306)
+ _st_.goboom(312)
 try:
  _st_.inline(33, latex((a*c).transpose()))
 except:
- _st_.goboom(310)
+ _st_.goboom(316)
 try:
  _st_.inline(34, latex(a))
 except:
- _st_.goboom(318)
+ _st_.goboom(324)
 try:
  _st_.inline(35, latex(c))
 except:
- _st_.goboom(318)
+ _st_.goboom(324)
 try:
  _st_.inline(36, latex((a*c).transpose()))
 except:
- _st_.goboom(318)
+ _st_.goboom(325)
 try:
  _st_.inline(37, latex(matrix([[3,1,2],[1,4,0],[2,0,3]])))
 except:
- _st_.goboom(344)
+ _st_.goboom(351)
 try:
  _st_.inline(38, latex(matrix.identity(3)))
 except:
- _st_.goboom(372)
+ _st_.goboom(379)
 _st_.blockbegin()
 try:
  x,y,z=var('x','y','z')
@@ -182,139 +182,139 @@ try:
  par=matrix([[x^2,y*x,z*x],[y*x,y^2,y*z],[z*x,y*z,z^2]])
  q=matrix([x,y])
 except:
- _st_.goboom(523)
+ _st_.goboom(532)
 _st_.blockend()
 try:
  _st_.inline(39, latex(f))
 except:
- _st_.goboom(526)
+ _st_.goboom(535)
 try:
  _st_.inline(40, latex(diff(f,x)))
 except:
- _st_.goboom(532)
+ _st_.goboom(541)
 try:
  _st_.inline(41, latex(par))
 except:
- _st_.goboom(539)
+ _st_.goboom(548)
 try:
  _st_.inline(42, latex(diff(par,x)))
 except:
- _st_.goboom(539)
+ _st_.goboom(548)
 try:
  _st_.inline(43, latex(q))
 except:
- _st_.goboom(546)
+ _st_.goboom(555)
 try:
  _st_.inline(44, latex(q.transpose()))
 except:
- _st_.goboom(548)
+ _st_.goboom(557)
 try:
  _st_.inline(45, latex(q.transpose()))
 except:
- _st_.goboom(572)
+ _st_.goboom(582)
 try:
  _st_.inline(46, latex(f))
 except:
- _st_.goboom(598)
+ _st_.goboom(608)
 try:
  _st_.inline(47, latex(matrix(3,[c.integrate(x) for row in f for c in row ]) ))
 except:
- _st_.goboom(602)
+ _st_.goboom(613)
 _st_.blockbegin()
 try:
  var('x1','x2','x3')
  X=matrix([x1,x2,x3])
 except:
- _st_.goboom(618)
+ _st_.goboom(629)
 _st_.blockend()
 try:
  _st_.inline(48, latex(a))
 except:
- _st_.goboom(620)
+ _st_.goboom(631)
 try:
  _st_.inline(49, latex(X.transpose()))
 except:
- _st_.goboom(620)
+ _st_.goboom(631)
 try:
  _st_.inline(50, latex(X))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(51, latex(a))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(52, latex(X.transpose()))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(53, latex(X*a*X.transpose()))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(50, latex(X))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(51, latex(a))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(52, latex(X.transpose()))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 try:
  _st_.inline(53, latex(X*a*X.transpose()))
 except:
- _st_.goboom(625)
+ _st_.goboom(636)
 _st_.blockbegin()
 try:
  a=matrix([[-1,3,-2],[2,-4,2],[0,4,1]])
 except:
- _st_.goboom(674)
+ _st_.goboom(687)
 _st_.blockend()
 try:
  _st_.inline(54, latex(a))
 except:
- _st_.goboom(677)
+ _st_.goboom(690)
 try:
  _st_.inline(55, latex(a.adjoint()))
 except:
- _st_.goboom(702)
+ _st_.goboom(721)
 try:
  _st_.inline(56, latex(a.det()))
 except:
- _st_.goboom(722)
+ _st_.goboom(741)
 try:
  _st_.inline(57, latex(a.inverse()))
 except:
- _st_.goboom(726)
+ _st_.goboom(745)
 try:
  _st_.inline(58, latex(matrix.identity(3)))
 except:
- _st_.goboom(732)
+ _st_.goboom(751)
 _st_.blockbegin()
 try:
  a=matrix([[2,2,1],[2,1,0],[1,1,1]])
 except:
- _st_.goboom(779)
+ _st_.goboom(798)
 _st_.blockend()
 try:
  _st_.inline(59, latex(a))
 except:
- _st_.goboom(783)
+ _st_.goboom(802)
 try:
  _st_.inline(60, latex(a))
 except:
- _st_.goboom(798)
+ _st_.goboom(818)
 try:
  _st_.inline(61, latex(matrix.identity(3)))
 except:
- _st_.goboom(798)
+ _st_.goboom(818)
 try:
  _st_.inline(62, latex(a.augment(matrix.identity(3))))
 except:
- _st_.goboom(802)
+ _st_.goboom(823)
 _st_.blockbegin()
 try:
  b=matrix([[1,1,1/2],[2,1,0],[1,1,1]])
@@ -322,38 +322,38 @@ try:
  c=matrix([[1,1,1/2],[0,-1,-1],[1,1,1]])
  c1=matrix([[1/2,0,0],[-1,1,0],[0,0,1]])
 except:
- _st_.goboom(811)
+ _st_.goboom(832)
 _st_.blockend()
 try:
  _st_.inline(63, latex(b.augment(b1)))
 except:
- _st_.goboom(817)
+ _st_.goboom(838)
 try:
  _st_.inline(64, latex(c.augment(c1)))
 except:
- _st_.goboom(824)
+ _st_.goboom(845)
 try:
  _st_.inline(65, latex(matrix([[1,1,1/2,1/2,0,0],[0,-1,-1,-1,1,0],[0,0,1/2,-1/2,0,1]])))
 except:
- _st_.goboom(830)
+ _st_.goboom(851)
 try:
  _st_.inline(66, latex(matrix([[1,1,1/2,1/2,0,0],[0,1,1,1,-1,0],[0,0,1,-1,0,2]])))
 except:
- _st_.goboom(836)
+ _st_.goboom(857)
 try:
  _st_.inline(67, latex(matrix([[1,1,1/2,1/2,0,0],[0,1,0,2,-1,-2],[0,0,1,-1,0,2]])))
 except:
- _st_.goboom(842)
+ _st_.goboom(863)
 try:
  _st_.inline(68, latex(matrix([[1,1,0,1,0,-1],[0,1,0,2,-1,-2],[0,0,1,-1,0,2]])))
 except:
- _st_.goboom(849)
+ _st_.goboom(870)
 try:
  _st_.inline(69, latex((matrix.identity(QQ,3)).augment(a.inverse())))
 except:
- _st_.goboom(855)
+ _st_.goboom(876)
 try:
  _st_.inline(70, latex(a.inverse()))
 except:
- _st_.goboom(863)
+ _st_.goboom(884)
 _st_.endofdoc()
