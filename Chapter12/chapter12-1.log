@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.7)  1 NOV 2015 20:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.7)  1 NOV 2015 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,16 +550,22 @@ Chapter 1.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+[2]
 
 ! Package inputenc Error: Unicode char \u8:ﬁ not set up for use with LaTeX.
 
@@ -567,12 +573,12 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ...area should not be less than the spec1ﬁ
+l.165 ...area should not be less than the spec1ﬁ
                                                   ed minimum steel area (Tab...
 
 ? 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 171--174
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
 
@@ -583,32 +589,32 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 ...ss can be checked to be safe by using ﬁ
+l.207 ...ss can be checked to be safe by using ﬁ
                                                   rst principles.
 ? 
-[6]
+[3]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.203 
+l.226 
       
 ? 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-[9]
+[4]
 
 ! Package inputenc Error: Unicode char \u8:ﬁ not set up for use with LaTeX.
 
@@ -616,34 +622,36 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.249 ...or stepped. Design aids are given for ﬁ
+l.272 ...or stepped. Design aids are given for ﬁ
                                                   xing depth of footings and...
 
 ? 
 *********************************************************************
-[10] (./chapter12-1.aux) ) 
+[5] (./chapter12-1.aux) ) 
 Here is how much of TeX's memory you used:
- 4820 strings out of 493834
- 66045 string characters out of 6154319
- 145708 words of memory out of 5000000
- 8036 multiletter control sequences out of 15000+600000
- 6878 words of font info for 25 fonts, out of 8000000 for 9000
+ 4843 strings out of 493834
+ 66360 string characters out of 6154319
+ 150108 words of memory out of 5000000
+ 8057 multiletter control sequences out of 15000+600000
+ 7922 words of font info for 28 fonts, out of 8000000 for 9000
  798 hyphenation exceptions out of 8191
- 38i,6n,43p,713b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
-x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on chapter12-1.pdf (10 pages, 140028 bytes).
+ 38i,8n,43p,713b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti7.pfb>
+Output written on chapter12-1.pdf (5 pages, 152776 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
