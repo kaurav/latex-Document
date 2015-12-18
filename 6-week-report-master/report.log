@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.7)  18 DEC 2015 11:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.7)  18 DEC 2015 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -235,58 +235,120 @@ Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 ) (./titletoc.sty
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen113
-) (./lastpage.sty
-Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
- (JPG)
-) (./macro/macro.sty)
-(./float.sty
-Package: float 1999/05/29 v1.2d Float enhancements (AL)
-\c@float@type=\count108
-\float@box=\box28
-\@floatcapt=\box29
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip47
-\f@ncyO@elh=\skip48
-\f@ncyO@erh=\skip49
-\f@ncyO@olh=\skip50
-\f@ncyO@orh=\skip51
-\f@ncyO@elf=\skip52
-\f@ncyO@erf=\skip53
-\f@ncyO@olf=\skip54
-\f@ncyO@orf=\skip55
 )
+(/home/amarjeet/texmf/tex/generic/sagetex/sagetex.sty
+Package: sagetex 2012/01/16 v2.3.3-69dcb0eb93de embedding Sage into LaTeX docum
+ents
+
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks20
 \verbatim@line=\toks21
 \verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count108
+\FV@InFile=\read3
+\FV@TabBox=\box28
+\c@FancyVerbLine=\count109
+\FV@StepNumber=\count110
+\FV@OutFile=\write5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count111
+\lst@gtempboxa=\box29
+\lst@token=\toks22
+\lst@length=\count112
+\lst@currlwidth=\dimen114
+\lst@column=\count113
+\lst@pos=\count114
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count115
+\lst@lineno=\count116
+\lst@maxwidth=\dimen117
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count117
+\lst@skipnumbers=\count118
+\lst@framebox=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(./makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ST@inline=\count119
+\c@ST@plot=\count120
+\c@ST@cmdline=\count121
+\sagetexindent=\skip47
+
+(./report.sagetex.sout)
+\sagecommandlineskip=\skip48
+) (./lastpage.sty
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
+ (JPG)
+) (./macro/macro.sty) (./float.sty
+Package: float 1999/05/29 v1.2d Float enhancements (AL)
+\c@float@type=\count122
+\float@box=\box31
+\@floatcapt=\box32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
 ) (./fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip56
-\mylen=\skip57
-\myhi=\skip58
-\px=\skip59
-\py=\skip60
-\pyy=\skip61
-\pxx=\skip62
-\backskip=\skip63
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+\RW=\skip58
+\mylen=\skip59
+\myhi=\skip60
+\px=\skip61
+\py=\skip62
+\pyy=\skip63
+\pxx=\skip64
+\backskip=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count109
-\Gm@cntv=\count110
-\c@Gm@tempcnt=\count111
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks22
+\Gm@cnth=\count123
+\Gm@cntv=\count124
+\c@Gm@tempcnt=\count125
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks23
 )
 Excluding 'screen' comment. (./report.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -299,33 +361,33 @@ LaTeX Warning: Label `' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen122
-\scratchbox=\box30
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen123
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count126
+\scratchdimen=\dimen126
+\scratchbox=\box33
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen127
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -341,8 +403,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 29.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring ON on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -350,15 +412,19 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count118
+\c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./report.out) (./report.out)
-\@outlinefile=\write5
-\openout5 = `report.out'.
+\@outlinefile=\write6
+\openout6 = `report.out'.
+
+\c@lstlisting=\count133
+\ST@sf=\write7
+\openout7 = `report.sagetex.sage'.
 
 
 *geometry* driver: auto-detecting
@@ -399,14 +465,14 @@ LaTeX Info: Redefining \nameref on input line 29.
 <images/gne.png, id=233, 694.595pt x 723.70375pt>
 File: images/gne.png Graphic file (type png)
  <use images/gne.png>
-Package pdftex.def Info: images/gne.png used on input line 36.
+Package pdftex.def Info: images/gne.png used on input line 38.
 (pdftex.def)             Requested size: 111.13747pt x 115.79495pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -460,8 +526,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2] (./report.toc [3
 
 ])
-\tf@toc=\write6
-\openout6 = `report.toc'.
+\tf@toc=\write8
+\openout8 = `report.toc'.
 
 
 
@@ -471,14 +537,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4] (./report.lof)
-\tf@lof=\write7
-\openout7 = `report.lof'.
+\tf@lof=\write9
+\openout9 = `report.lof'.
 
  [5
 
 ]
 Chapter 1.
-(./input/intr/company.tex <images/gndec.jpg, id=384, 556.0775pt x 470.75874pt>
+(./input/intr/company.tex <images/gndec.jpg, id=386, 556.0775pt x 470.75874pt>
 File: images/gndec.jpg Graphic file (type jpg)
 
 <use images/gndec.jpg>
@@ -521,7 +587,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
 
-<images/aw.jpg, id=390, 500.87125pt x 232.87pt>
+<images/aw.jpg, id=392, 500.87125pt x 232.87pt>
 File: images/aw.jpg Graphic file (type jpg)
  <use images/aw.jpg>
 Package pdftex.def Info: images/aw.jpg used on input line 42.
@@ -583,7 +649,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 Chapter 3.
 (./input/Project/graphs.tex
-<images/DFDS.png, id=414, 845.1575pt x 597.23125pt>
+<images/DFDS.png, id=416, 845.1575pt x 597.23125pt>
 File: images/DFDS.png Graphic file (type png)
  <use images/DFDS.png>
 Package pdftex.def Info: images/DFDS.png used on input line 3.
@@ -598,7 +664,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.6 \newpage
              <./images/DFDS.png>]
-<images/DFDS1.png, id=421, 597.23125pt x 845.1575pt>
+<images/DFDS1.png, id=423, 597.23125pt x 845.1575pt>
 File: images/DFDS1.png Graphic file (type png)
  <use images/DFDS1.png>
 Package pdftex.def Info: images/DFDS1.png used on input line 8.
@@ -617,7 +683,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   \fi \fi 
 l.12 \newpage
               <./images/DFDS1.png>]
-<images/UI.png, id=427, 845.1575pt x 597.23125pt>
+<images/UI.png, id=429, 845.1575pt x 597.23125pt>
 File: images/UI.png Graphic file (type png)
  <use images/UI.png>
 Package pdftex.def Info: images/UI.png used on input line 15.
@@ -636,7 +702,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   \fi \fi 
 l.19 \newpage
               <./images/UI.png>]
-<images/flowchart.png, id=433, 1690.315pt x 2392.94pt>
+<images/flowchart.png, id=435, 1690.315pt x 2392.94pt>
 File: images/flowchart.png Graphic file (type png)
 
 <use images/flowchart.png>
@@ -646,7 +712,7 @@ Package pdftex.def Info: images/flowchart.png used on input line 23.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/flowchartmatrix.png, id=434, 1690.315pt x 2392.94pt>
+<images/flowchartmatrix.png, id=436, 1690.315pt x 2392.94pt>
 File: images/flowchartmatrix.png Graphic file (type png)
 
 <use images/flowchartmatrix.png>
@@ -656,7 +722,7 @@ Package pdftex.def Info: images/flowchartmatrix.png used on input line 28.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/flowchartfile.png, id=435, 1690.315pt x 2392.94pt>
+<images/flowchartfile.png, id=437, 1690.315pt x 2392.94pt>
 File: images/flowchartfile.png Graphic file (type png)
 
 <use images/flowchartfile.png>
@@ -729,7 +795,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.89 \chapter
+l.91 \chapter
              {Development and Implementation} <./images/flowchartmatrix.png
 
 pdfTeX warning: pdflatex (file ./images/flowchartmatrix.png): large interlaced 
@@ -746,7 +812,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.89 \chapter
+l.91 \chapter
              {Development and Implementation} <./images/flowchartfile.png
 
 pdfTeX warning: pdflatex (file ./images/flowchartfile.png): large interlaced PN
@@ -754,16 +820,11 @@ G might cause out of memory (use non-interlaced PNG to fix this)
 >]
 Chapter 4.
 (./input/tech/python-intro.tex
-<images/python.jpg, id=509, 702.625pt x 175.65625pt>
+<images/python.jpg, id=511, 702.625pt x 175.65625pt>
 File: images/python.jpg Graphic file (type jpg)
  <use images/python.jpg>
 Package pdftex.def Info: images/python.jpg used on input line 2.
 (pdftex.def)             Requested size: 210.78912pt x 52.69727pt.
-
-Overfull \hbox (14.83151pt too wide) in paragraph at lines 10--16
-[]\OT1/cmr/m/n/12 Python is an easy to learn, pow-er-ful pro-gram-ming lan-guag
-e.Python runs on Win-dows, Linux/Unix,
- []
 
 [17
 
@@ -789,7 +850,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-) (./input/tech/frontend.tex <images/HTML.png, id=515, 2007.5pt x 2007.5pt>
+) (./input/tech/frontend.tex <images/HTML.png, id=517, 2007.5pt x 2007.5pt>
 File: images/HTML.png Graphic file (type png)
 
 <use images/HTML.png>
@@ -809,7 +870,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   \fi \fi 
 l.14 \begin{verbatim}
                       <./images/HTML.png>]
-<images/CSS.jpg, id=524, 281.05pt x 250.9375pt>
+<images/CSS.jpg, id=526, 281.05pt x 250.9375pt>
 File: images/CSS.jpg Graphic file (type jpg)
  <use images/CSS.jpg>
 Package pdftex.def Info: images/CSS.jpg used on input line 31.
@@ -827,7 +888,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.43 }
-       <./images/CSS.jpg>] <images/JS.png, id=531, 451.6875pt x 451.6875pt>
+       <./images/CSS.jpg>] <images/JS.png, id=533, 451.6875pt x 451.6875pt>
 File: images/JS.png Graphic file (type png)
 
 <use images/JS.png>
@@ -847,7 +908,7 @@ Missing character: There is no À in font cmr12!
 Missing character: There is no å in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no ™ in font cmr12!
- <images/boot.png, id=532, 599.23875pt x 601.24625pt>
+ <images/boot.png, id=534, 599.23875pt x 601.24625pt>
 File: images/boot.png Graphic file (type png)
 
 <use images/boot.png>
@@ -902,7 +963,7 @@ Missing character: There is no À in font cmr12!
 Missing character: There is no ê in font cmr12!
 Missing character: There is no … in font cmr12!
 Missing character: There is no õ in font cmr12!
- <images/donald.png, id=539, 170.88844pt x 237.13594pt>
+ <images/donald.png, id=541, 170.88844pt x 237.13594pt>
 File: images/donald.png Graphic file (type png)
 
 <use images/donald.png>
@@ -922,7 +983,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   \fi \fi 
 l.19 
       <./images/donald.png>]) (./input/tech/django-intro.tex
-<images/django.png, id=549, 1204.5pt x 419.5675pt>
+<images/django.png, id=551, 1204.5pt x 419.5675pt>
 File: images/django.png Graphic file (type png)
  <use images/django.png>
 Package pdftex.def Info: images/django.png used on input line 2.
@@ -1003,7 +1064,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-<images/out.jpg, id=558, 928.21782pt x 196.48407pt>
+<images/out.jpg, id=560, 928.21782pt x 196.48407pt>
 File: images/out.jpg Graphic file (type jpg)
  <use images/out.jpg>
 Package pdftex.def Info: images/out.jpg used on input line 105.
@@ -1041,7 +1102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-) (./input/tech/doxygen.tex <images/doxygen.jpg, id=568, 208.78pt x 40.15pt>
+) (./input/tech/doxygen.tex <images/doxygen.jpg, id=570, 208.78pt x 40.15pt>
 File: images/doxygen.jpg Graphic file (type jpg)
 
 <use images/doxygen.jpg>
@@ -1069,19 +1130,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-<images/doc.png, id=574, 1371.1225pt x 770.88pt>
+<images/doc.png, id=576, 1371.1225pt x 770.88pt>
 File: images/doc.png Graphic file (type png)
  <use images/doc.png>
 Package pdftex.def Info: images/doc.png used on input line 46.
 (pdftex.def)             Requested size: 479.90007pt x 269.81204pt.
 
-<images/doc1.png, id=575, 1371.1225pt x 770.88pt>
+<images/doc1.png, id=577, 1371.1225pt x 770.88pt>
 File: images/doc1.png Graphic file (type png)
  <use images/doc1.png>
 Package pdftex.def Info: images/doc1.png used on input line 52.
 (pdftex.def)             Requested size: 479.90007pt x 269.81204pt.
 
-<images/doc2.png, id=576, 1371.1225pt x 770.88pt>
+<images/doc2.png, id=578, 1371.1225pt x 770.88pt>
 File: images/doc2.png Graphic file (type png)
  <use images/doc2.png>
 Package pdftex.def Info: images/doc2.png used on input line 53.
@@ -1100,7 +1161,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   \fi \fi 
 l.56 \newpage
               <./images/doc.png>]) (./input/tech/git.tex
-<images/github.jpg, id=581, 401.5pt x 301.125pt>
+<images/github.jpg, id=583, 401.5pt x 301.125pt>
 File: images/github.jpg Graphic file (type jpg)
  <use images/github.jpg>
 Package pdftex.def Info: images/github.jpg used on input line 5.
@@ -1162,7 +1223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--49
 
  []
 
-<images/git.jpg, id=590, 219.95218pt x 219.95218pt>
+<images/git.jpg, id=592, 219.95218pt x 219.95218pt>
 File: images/git.jpg Graphic file (type jpg)
  <use images/git.jpg>
 Package pdftex.def Info: images/git.jpg used on input line 53.
@@ -1250,7 +1311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--152
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-) (./input/tech/sage.tex <images/sage.png, id=601, 400.77pt x 106.7625pt>
+) (./input/tech/sage.tex <images/sage.png, id=603, 400.77pt x 106.7625pt>
 File: images/sage.png Graphic file (type png)
 
 <use images/sage.png>
@@ -1278,17 +1339,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 l.37 \item S
             upport for complex numbers, arbitrary precision and symbolic com...
  <./images/sage.png>]) (./input/tech/implementation.tex
-<images/output/1.png, id=611, 1371.1225pt x 770.88pt>
+<images/output/1.png, id=613, 1371.1225pt x 770.88pt>
 File: images/output/1.png Graphic file (type png)
 
 <use images/output/1.png>
 Package pdftex.def Info: images/output/1.png used on input line 2.
 (pdftex.def)             Requested size: 438.76816pt x 246.68665pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/output/2.png, id=612, 1371.1225pt x 770.88pt>
+<images/output/2.png, id=614, 1371.1225pt x 770.88pt>
 File: images/output/2.png Graphic file (type png)
 
 <use images/output/2.png>
@@ -1296,75 +1354,12 @@ Package pdftex.def Info: images/output/2.png used on input line 6.
 (pdftex.def)             Requested size: 438.76816pt x 246.68665pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34] <images/output/3.png, id=617, 1371.1225pt x 770.88pt>
-File: images/output/3.png Graphic file (type png)
-
-<use images/output/3.png>
-Package pdftex.def Info: images/output/3.png used on input line 11.
-(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/output/4.png, id=618, 1371.1225pt x 770.88pt>
-File: images/output/4.png Graphic file (type png)
-
-<use images/output/4.png>
-Package pdftex.def Info: images/output/4.png used on input line 15.
-(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/output/6.png, id=619, 1371.1225pt x 770.88pt>
-File: images/output/6.png Graphic file (type png)
-
-<use images/output/6.png>
-Package pdftex.def Info: images/output/6.png used on input line 20.
-(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/output/7.png, id=620, 1371.1225pt x 770.88pt>
-File: images/output/7.png Graphic file (type png)
-
-<use images/output/7.png>
-Package pdftex.def Info: images/output/7.png used on input line 24.
-(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/output/8.png, id=621, 1371.1225pt x 770.88pt>
-File: images/output/8.png Graphic file (type png)
-
-<use images/output/8.png>
-Package pdftex.def Info: images/output/8.png used on input line 29.
-(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/output/9.png, id=622, 1371.1225pt x 770.88pt>
-File: images/output/9.png Graphic file (type png)
-
-<use images/output/9.png>
-Package pdftex.def Info: images/output/9.png used on input line 33.
-(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
+[34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
@@ -1376,16 +1371,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope}pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.16}) has been already used, duplicate ig
-nored
+l.9 \newpage
+            pdfTeX warning (ext4): destination with the same identifier (name{f
+igure.4.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope} <./images/output/1.png> <./images/o
-utput/2.png>]
+l.9 \newpage
+             <./images/output/1.png> <./images/output/2.png>]
+<images/output/3.png, id=623, 1371.1225pt x 770.88pt>
+File: images/output/3.png Graphic file (type png)
+
+<use images/output/3.png>
+Package pdftex.def Info: images/output/3.png used on input line 11.
+(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
+
+<images/output/4.png, id=624, 1371.1225pt x 770.88pt>
+File: images/output/4.png Graphic file (type png)
+
+<use images/output/4.png>
+Package pdftex.def Info: images/output/4.png used on input line 15.
+(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
@@ -1397,16 +1404,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope}pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.18}) has been already used, duplicate ig
-nored
+l.18 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.4.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope} <./images/output/3.png> <./images/o
-utput/4.png>]
+l.18 \newpage
+              <./images/output/3.png> <./images/output/4.png>]
+<images/output/6.png, id=629, 1371.1225pt x 770.88pt>
+File: images/output/6.png Graphic file (type png)
+
+<use images/output/6.png>
+Package pdftex.def Info: images/output/6.png used on input line 20.
+(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
+
+<images/output/7.png, id=630, 1371.1225pt x 770.88pt>
+File: images/output/7.png Graphic file (type png)
+
+<use images/output/7.png>
+Package pdftex.def Info: images/output/7.png used on input line 24.
+(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
@@ -1418,16 +1437,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope}pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.20}) has been already used, duplicate ig
-nored
+l.27 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.4.20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope} <./images/output/6.png> <./images/o
-utput/7.png>]
+l.27 \newpage
+              <./images/output/6.png> <./images/output/7.png>]
+<images/output/8.png, id=636, 1371.1225pt x 770.88pt>
+File: images/output/8.png Graphic file (type png)
+
+<use images/output/8.png>
+Package pdftex.def Info: images/output/8.png used on input line 29.
+(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
+
+<images/output/9.png, id=637, 1371.1225pt x 770.88pt>
+File: images/output/9.png Graphic file (type png)
+
+<use images/output/9.png>
+Package pdftex.def Info: images/output/9.png used on input line 33.
+(pdftex.def)             Requested size: 425.04358pt x 238.97034pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
@@ -1439,80 +1470,103 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope}pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.4.22}) has been already used, duplicate ig
-nored
+l.36 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.4.22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 \chapter
-              {Conclusion And Future Scope} <./images/output/8.png> <./images/o
-utput/9.png>]
+l.36 \newpage
+              <./images/output/8.png> <./images/output/9.png>])
+(./input/tech/test.tex
+<sage-plots-for-report.tex/plot-0.png, id=642, 565.1514pt x 420.6114pt>
+File: sage-plots-for-report.tex/plot-0.png Graphic file (type png)
+
+<use sage-plots-for-report.tex/plot-0.png>
+Package pdftex.def Info: sage-plots-for-report.tex/plot-0.png used on input lin
+e 14.
+(pdftex.def)             Requested size: 423.8625pt x 315.45778pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 18.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.119 \chapter
+              {Conclusion And Future Scope} <./sage-plots-for-report.tex/plot-0
+.png>]
 Chapter 5.
 (./input/con/conclusion.tex) (./input/con/future.tex
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-) (./input/bibliography.tex [39
+) (./input/bibliography.tex [40
 
-]) AED: lastpage setting LastPage [40
+])
+*********************************************************************
+AED: lastpage setting LastPage [41
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{document}
+l.123 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{document}
+l.123 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{document}
+l.123 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{document}
+l.123 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{document}
+l.123 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.121 \end{document}
+l.123 \end{document}
                     ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: E82A248A8B97189B89E40ECC7F0B3034;3806.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 7461 strings out of 493834
- 105819 string characters out of 6154319
- 281105 words of memory out of 5000000
- 10371 multiletter control sequences out of 15000+600000
+ 9120 strings out of 493834
+ 130636 string characters out of 6154319
+ 313641 words of memory out of 5000000
+ 11994 multiletter control sequences out of 15000+600000
  15423 words of font info for 59 fonts, out of 8000000 for 9000
  798 hyphenation exceptions out of 8191
  36i,12n,43p,873b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1527,10 +1581,10 @@ ic/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb>
-Output written on report.pdf (46 pages, 2314001 bytes).
+Output written on report.pdf (47 pages, 2340366 bytes).
 PDF statistics:
- 729 PDF objects out of 1000 (max. 8388607)
- 620 compressed objects within 7 object streams
- 182 named destinations out of 1000 (max. 500000)
- 617 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 737 PDF objects out of 1000 (max. 8388607)
+ 625 compressed objects within 7 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 622 words of extra memory for PDF output out of 10000 (max. 10000000)
 
