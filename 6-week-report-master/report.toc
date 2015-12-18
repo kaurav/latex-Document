@@ -3,56 +3,56 @@
 \contentsline {chapter}{\numberline {2}Introduction To Project}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}overveiw}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}The Existing System}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Software Functions Provided in Proposed system}{4}{section.2.3}
+\contentsline {section}{\numberline {2.3}Software Functions Provided in Proposed system}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}User Requirement Analysis}{5}{section.2.4}
 \contentsline {section}{\numberline {2.5}Feasibility Analysis}{5}{section.2.5}
-\contentsline {section}{\numberline {2.6}Objective of Project}{5}{section.2.6}
-\contentsline {chapter}{\numberline {3}Project Design}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}User Requirement}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}DFDS}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}UI Flow Diagram}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Flowchart}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Software Requirement Analysis}{11}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Functional Requirements}{11}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Non functional requirements}{12}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Dependencies}{13}{section.3.6}
-\contentsline {chapter}{\numberline {4}Development and Implementation}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Python}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Features of Python}{16}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Installation of Python}{17}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Front End Lanuages and Framework}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}HTML}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}CSS}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Javascript}{19}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}BootStarp}{19}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Shell Scripting}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Introduction to \LaTeX }{20}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Typesetting}{21}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Introduction to Django}{21}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Features of Django}{22}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Installation of Django}{22}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}MTV}{23}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Creating Prject in Django}{23}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Development Server in Django}{23}{subsection.4.5.5}
-\contentsline {subsection}{\numberline {4.5.6}Database setup}{24}{subsection.4.5.6}
-\contentsline {section}{\numberline {4.6}Introduction to Doxygen}{25}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Features of Doxygen}{25}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Installation of Doxygen}{26}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Introduction to Github}{27}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}What is Git?}{29}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Installation of Git}{30}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Various Git Commands}{30}{subsection.4.7.3}
-\contentsline {subsubsection}{\numberline {4.7.3.1}Create Repositories}{30}{subsubsection.4.7.3.1}
-\contentsline {subsubsection}{\numberline {4.7.3.2}Make Changes}{30}{subsubsection.4.7.3.2}
-\contentsline {subsubsection}{\numberline {4.7.3.3}Group Changes}{31}{subsubsection.4.7.3.3}
-\contentsline {subsubsection}{\numberline {4.7.3.4}Save Fragments}{31}{subsubsection.4.7.3.4}
-\contentsline {subsubsection}{\numberline {4.7.3.5}Synchronize Changes}{31}{subsubsection.4.7.3.5}
-\contentsline {section}{\numberline {4.8}SageMath}{32}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Features}{32}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Installation From Source Code}{33}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}Implementation}{33}{section.4.9}
-\contentsline {section}{\numberline {4.10}Testing}{34}{section.4.10}
-\contentsline {chapter}{\numberline {5}Conclusion And Future Scope}{38}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusion}{38}{section.5.1}
-\contentsline {section}{\numberline {5.2}Future Scope}{38}{section.5.2}
+\contentsline {section}{\numberline {2.6}Objective of Project}{6}{section.2.6}
+\contentsline {chapter}{\numberline {3}Project Design}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}User Requirement}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}DFDS}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}UI Flow Diagram}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Flowchart}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Software Requirement Analysis}{12}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Functional Requirements}{12}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Non functional requirements}{13}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Dependencies}{14}{section.3.6}
+\contentsline {chapter}{\numberline {4}Development and Implementation}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Python}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Features of Python}{17}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Installation of Python}{18}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Front End Lanuages and Framework}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}HTML}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}CSS}{19}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Javascript}{20}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}BootStarp}{20}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Shell Scripting}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Introduction to \LaTeX }{21}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Typesetting}{22}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Introduction to Django}{22}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Features of Django}{23}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Installation of Django}{23}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}MTV}{24}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Creating Prject in Django}{24}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Development Server in Django}{24}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Database setup}{25}{subsection.4.5.6}
+\contentsline {section}{\numberline {4.6}Introduction to Doxygen}{26}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Features of Doxygen}{26}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Installation of Doxygen}{27}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Introduction to Github}{28}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}What is Git?}{30}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Installation of Git}{31}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Various Git Commands}{31}{subsection.4.7.3}
+\contentsline {subsubsection}{\numberline {4.7.3.1}Create Repositories}{31}{subsubsection.4.7.3.1}
+\contentsline {subsubsection}{\numberline {4.7.3.2}Make Changes}{31}{subsubsection.4.7.3.2}
+\contentsline {subsubsection}{\numberline {4.7.3.3}Group Changes}{32}{subsubsection.4.7.3.3}
+\contentsline {subsubsection}{\numberline {4.7.3.4}Save Fragments}{32}{subsubsection.4.7.3.4}
+\contentsline {subsubsection}{\numberline {4.7.3.5}Synchronize Changes}{32}{subsubsection.4.7.3.5}
+\contentsline {section}{\numberline {4.8}SageMath}{33}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Features}{33}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Installation From Source Code}{34}{subsection.4.8.2}
+\contentsline {section}{\numberline {4.9}Implementation}{34}{section.4.9}
+\contentsline {section}{\numberline {4.10}Testing}{35}{section.4.10}
+\contentsline {chapter}{\numberline {5}Conclusion And Future Scope}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusion}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}Future Scope}{39}{section.5.2}
 \contentsfinish 
