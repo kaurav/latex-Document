@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.7)  18 DEC 2015 13:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.7)  18 DEC 2015 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,14 +632,14 @@ Overfull \hbox (1.61687pt too wide) in paragraph at lines 31--32
  made
  []
 
-) (./input/intr/req-n-ana.tex
+) (./input/intr/usR.tex) (./input/intr/req-n-ana.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5])
+[5]) (./input/intr/obj.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 18.0pt.
@@ -1499,6 +1499,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.119 \chapter
+              {Conclusion And Future Scope}pdfTeX warning (ext4): destination w
+ith the same identifier (name{table.4.1}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.119 \chapter
               {Conclusion And Future Scope} <./sage-plots-for-report.tex/plot-0
 .png>]
 Chapter 5.
@@ -1563,10 +1570,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 9120 strings out of 493834
- 130636 string characters out of 6154319
+ 9128 strings out of 493834
+ 130736 string characters out of 6154319
  313641 words of memory out of 5000000
- 11994 multiletter control sequences out of 15000+600000
+ 11995 multiletter control sequences out of 15000+600000
  15423 words of font info for 59 fonts, out of 8000000 for 9000
  798 hyphenation exceptions out of 8191
  36i,12n,43p,873b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1581,10 +1588,10 @@ ic/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb>
-Output written on report.pdf (47 pages, 2340366 bytes).
+Output written on report.pdf (47 pages, 2341376 bytes).
 PDF statistics:
- 737 PDF objects out of 1000 (max. 8388607)
- 625 compressed objects within 7 object streams
- 184 named destinations out of 1000 (max. 500000)
+ 738 PDF objects out of 1000 (max. 8388607)
+ 626 compressed objects within 7 object streams
+ 185 named destinations out of 1000 (max. 500000)
  622 words of extra memory for PDF output out of 10000 (max. 10000000)
 
