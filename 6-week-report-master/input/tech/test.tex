@@ -1,11 +1,16 @@
-This software had been taken through rigorous test to fully found potentional causes of error and system failure
-and full focus have been given to cover all possible execptions that can 
-ouccure and cause failure of the software.
+Testing a program consists of providing the program with a set of test inputs (or test cases) and
+observing if the program behaves as expected. If the program fails to behave as expected, then the
+conditions under which failure occurs are noted for later debugging and correction. 
+
+
+This software had been taken through rigorous test to fully found potential causes of error and system failure
+and full focus have been given to cover all possible exceptions that can 
+occur and cause failure of the software.
 As this software is based on intensive background process it have been taken care that 
-if correct input and email address are given then processing of user job can even continue or aleast automatically 
+if correct input and email address are given then processing of user job can even continue or a least automatically 
 restart even after server shuts down or even crash.
 
-Follwing is data collected Table no. \ref{table} and corresponding Graph figure \ref{fig:graph} for analysising the computation time taken by software 
+Following is data collected Table no. \ref{table} and corresponding Graph figure \ref{fig:graph} for analyzing the computation time taken by software 
 to its maximum supported value at this time-:
 \begin{sagesilent}
 list=((5,0.341143),(
@@ -31,7 +36,7 @@ p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$N
 \centering
 \begin{tabular}{ ||c|c|| }
 \hline
- \multicolumn{2}{||c||}{Time complexity anaylsis table} \\
+ \multicolumn{2}{||c||}{Time complexity analysis table} \\
  \hline
  Number of Storeys & Time(sec) \\ [0.5ex] 
  \hline \hline
@@ -44,7 +49,7 @@ p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$N
 	50 & 1527.764697 \\ [1ex]
  \hline
 \end{tabular}
-\caption{Computaional anaysis of DoS}
+\caption{Computational analysis of DoS}
 \label{table2}
 \end{table}
 
@@ -56,8 +61,8 @@ p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$N
  \hline
  Input & Desired Output & Actual Output & Status \\ [0.5ex] 
  \hline \hline
- Inputs range exceeds & Alert user about range. Don't proceed & Alert user about range. Don't proceed. & Pass\\ \hline
- Any one or more input field left empty & Alert user about range. Don't proceed & Alert user about range. Don't proceed & Pass\\ \hline
+ Inputs range exceeds & Alert user,Don't proceed & Alert user,Don't proceed. & Pass\\ \hline
+ Any one or more field left empty & Alert user about range. Don't proceed & Alert user about range. Don't proceed & Pass\\ \hline
  CSV selected: No & Direct to manual fill of matrices & Direct to manual fill of matrices & Pass\\ \hline
  CSV selected: Yes & Direct to uploading of file & Direct to uploading of file & Pass\\ \hline
  Email selected: Yes & Show email field after Submit & Show email field after Submit & Pass\\ \hline
@@ -81,8 +86,8 @@ p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$N
  \hline
   Input & Desired Output & Actual Output & Status \\ [0.5ex] 
  \hline \hline 
- Email Address not filled and Submit & Give PDF after all processing & Give PDF after all processing & Pass\\ \hline
- Email Address filled and Submit & Show message and redirect to homepage &  Show message and redirect to homepage & Pass\\ \hline
+ Email Address not filled & Give PDF after all processing & Give PDF after all processing & Pass\\ \hline
+ Email Address filled and Submit & Show message, redirect to homepage & Show message, redirect to homepage & Pass\\ \hline
  Input range exceeds or not filled & Show error message & Show error message & Pass\\ \hline
 
 \end{tabular}}
@@ -102,11 +107,10 @@ p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$N
  \hline
  Input & Desired Output & Actual Output & Status \\ [0.5ex] 
  \hline \hline 
- Email Address not filled and Submit & Give PDF after all processing & Give PDF after all processing & Pass\\ \hline
- Email Address filled and Submit & Show message and redirect to homepage & Show message and redirect to homepage & Pass\\ \hline
+ Email Address not filled & Give PDF after all processing & Give PDF after all processing & Pass\\ \hline
+ Email Address filled and Submit & Show message, redirect to homepage & Show message, redirect to homepage & Pass\\ \hline
  Input range exceeds or not filled & Show error message & Show error message & Pass\\ \hline
  Wrongly formatted CSV file & Give error message with Possible errors  & Give error message with Possible errors & Pass\\ \hline
-	If server stops and rebooted & Start processing interrupted requests & Start processing interrupted requests & Pass\\ \hline
 \end{tabular}}
 \caption{Tests for csv upload page}
 \label{table5}
@@ -123,7 +127,7 @@ p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$N
   Input & Desired Output & Actual Output & Status \\ [0.5ex] 
  \hline \hline 
  URL refreshed & Send to homepage & Send to homepage & Pass\\ \hline
- server stops or rebooted & Start processing interrupted requests as threads & Start processing interrupted requests as threads & Pass\\ \hline
+ server stops or rebooted & Start processing interrupted requests & Start processing interrupted requests & Pass\\ \hline
 \end{tabular}}
 
 

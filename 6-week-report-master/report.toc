@@ -1,24 +1,24 @@
-\contentsline {chapter}{\numberline {1}Introduction To Organisation}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}INTRODUCTION OF DOCUMENT}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Testing and Consutancy Cell}{2}{section.1.1}
 \contentsline {chapter}{\numberline {2}Introduction To Project}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overveiw}{4}{section.2.1}
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}The Existing System}{4}{section.2.2}
 \contentsline {section}{\numberline {2.3}User Requirement Analysis}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}Feasibility Analysis}{5}{section.2.4}
 \contentsline {section}{\numberline {2.5}Objective of Project}{6}{section.2.5}
-\contentsline {chapter}{\numberline {3}Project Design}{7}{chapter.3}
+\contentsline {chapter}{\numberline {3}PROJECT DESIGN}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Software Requirement Analysis}{7}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Functional Requirements}{7}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Non functional requirements}{9}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}DFDS}{9}{section.3.2}
+\contentsline {section}{\numberline {3.2}DFDs}{9}{section.3.2}
 \contentsline {section}{\numberline {3.3}UI Flow Diagram}{10}{section.3.3}
 \contentsline {section}{\numberline {3.4}Flowchart}{11}{section.3.4}
 \contentsline {section}{\numberline {3.5}Dependencies}{17}{section.3.5}
-\contentsline {chapter}{\numberline {4}Development and Implementation}{18}{chapter.4}
+\contentsline {chapter}{\numberline {4}DEVELOPMENT AND IMPLEMENTATION}{18}{chapter.4}
 \contentsline {section}{\numberline {4.1}Python}{18}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Features of Python}{18}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Installation of Python}{19}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Front End Lanuages and Framework}{19}{section.4.2}
+\contentsline {section}{\numberline {4.2}Front End Languages and Framework}{19}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}HTML}{19}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}CSS}{20}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Javascript}{21}{subsection.4.2.3}
@@ -49,8 +49,8 @@
 \contentsline {subsection}{\numberline {4.8.1}Features}{34}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}Installation From Source Code}{35}{subsection.4.8.2}
 \contentsline {section}{\numberline {4.9}Implementation}{36}{section.4.9}
-\contentsline {section}{\numberline {4.10}Testing}{40}{section.4.10}
-\contentsline {chapter}{\numberline {5}Conclusion And Future Scope}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusion}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}Future Scope}{43}{section.5.2}
+\contentsline {section}{\numberline {4.10}Testing}{42}{section.4.10}
+\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE SCOPE}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusion}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Future Scope}{45}{section.5.2}
 \contentsfinish 

@@ -14,10 +14,10 @@ try:
  r = [(list[i][0],list[i][1]) for i in range(7)]
  p=list_plot(r,color='red',plotjoined=True,marker=".",frame=True,axes_labels=['$Number \ Of \ Storeys$ axis','$Time(sec)$ axis'],axes=False)
 except:
- _st_.goboom(20)
+ _st_.goboom(25)
 _st_.blockend()
 try:
  _st_.plot(0, format='notprovided', _p_=p)
 except:
- _st_.goboom(23)
+ _st_.goboom(28)
 _st_.endofdoc()
