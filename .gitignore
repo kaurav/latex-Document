@@ -57,8 +57,14 @@ docs/_build/
 target/
 
 # LaTeX stuff:
+*.lof
+*.lot
+*.sout
 *.aux
-*.pdf
+*.dvi
 *.sage
 *.toc
 *.cut
+*.log
+*.py
+*.scmd
