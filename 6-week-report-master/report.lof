@@ -8,8 +8,8 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces UI Flow diagram}}{11}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Flowchart of Whole System}}{12}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Flowchart of initialfile.pdfemail()}}{13}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Flowchart of veiw.matrix()}}{14}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Flowchart of veiw.file}}{15}{figure.3.7}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Flowchart of veiw.last()}}{14}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Flowchart of veiw.file()}}{15}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Flowchart of veiw.pdfemail()}}{16}{figure.3.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Python logo}}{18}{figure.4.1}
