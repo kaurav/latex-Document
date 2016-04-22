@@ -1,0 +1,128 @@
+\documentclass[12pt]{report}
+\usepackage[print,nopanel]{pdfscreen}
+%\begin{print}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{titletoc}% http://ctan.org/pkg/titletoc
+%\section{type}
+\usepackage{sagetex}
+
+\usepackage{lastpage}
+\usepackage{macro/macro}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage[Glenn]{fncychap}
+\lhead{\large\bfseries Dynamics of Structure}
+\usepackage[left=2.5cm, right=1.5cm, top=2.5cm, bottom=1.5cm]{geometry}
+\pagestyle{fancy}
+%\end{print}
+\margins{2.5cm}{1.5cm}{1.5cm}{1.5cm}
+\begin{screen}
+
+\renewcommand{\encodingdefault}{T1}
+\usepackage{setspace}
+\linespread{1.5}
+\renewcommand{\rmdefault}{ptm}
+\end{screen}
+\screensize{8cm}{9cm}
+\overlay{overlay8.pdf}
+\usepackage{graphicx}
+
+\begin{document}
+\input{input/start/titlepage.tex}
+\begin{screen}
+\ppttitle
+\end{screen}
+\footskip 0.7cm
+\thispagestyle{empty} 
+\pagetitle
+\newpage
+\pagenumbering{Roman}
+\cfoot{\thepage}
+
+\input{input/start/acknowledgement.tex}
+\newpage
+
+%not compulsory
+
+%\input{input/start/abstract.tex}
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+
+
+\pagenumbering{arabic}
+\cfoot{\thepage}
+
+\newpage
+\chapter{INTRODUCTION OF ORGANIZATION}
+\input{input/intr/company.tex}
+\newpage
+%\chapter{\LaTeX}
+%\input{input/latex.tex}
+\chapter{Introduction To Project}
+
+% pending 
+\section{Overview}
+\input{input/intr/intro.tex}
+
+%%%% This include existing system and will include user requirement
+\input{input/intr/project-preview.tex}
+\section{User Requirement Analysis} 
+\input{input/intr/usR.tex}
+
+\input{input/intr/req-n-ana.tex}
+
+\section{Objective of Project}
+\input{input/intr/obj.tex}
+\chapter{PROJECT DESIGN}
+\input{input/Project/Soft.tex}
+\input{input/Project/graphs.tex}
+\input{input/Project/dep.tex}
+
+
+
+
+
+\newpage
+\chapter{DEVELOPMENT AND IMPLEMENTATION}
+\section{Python} 
+\input {input/tech/python-intro.tex}
+
+
+\section[Front End Languages and Framework]{Front End Languages 
+and Framework \footnote{ Used in project but not by me accept 
+basic HTML}}
+\input {input/tech/frontend.tex}
+
+\input{input/tech/shell.tex}
+\input{input/tech/latex.tex}
+
+\section{Introduction to Django}
+\input {input/tech/django-intro.tex}
+
+\section{Introduction to Doxygen}
+\input {input/tech/doxygen.tex}
+
+\input{input/tech/git.tex}
+
+\input{input/tech/sage.tex}
+
+
+\section{Implementation}
+\input{input/tech/implementation.tex}
+
+\section{Testing}
+\input{input/tech/test.tex}
+
+\chapter{CONCLUSION AND FUTURE SCOPE}
+\input{input/con/conclusion.tex}
+\input{input/con/future.tex}
+\input{input/bibliography.tex}
+\end{document}
+
