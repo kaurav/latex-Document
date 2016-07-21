@@ -10,7 +10,3 @@ After installing this, go to the directory 6-week-report through terminal and ty
 It will produce a pdf file named "report.pdf" in the current directory. Open that using this command:
     evince report.pdf
 
-======Thanks======
-Mandeep Singh
-mandeep7.wordpress.com
-github.com/mandeeps708
