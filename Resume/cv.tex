@@ -1,0 +1,273 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Amarjeet Singh }{Kapoor}
+      {Computer Engineer}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+\includegraphics[scale=0.30]{amar.png}
+  \section{Address}
+    B-33, 1912 
+    Saleem Tabri, Ludhiana
+    ~
+  \section{Tel}
+    +91 8568988521
+    ~
+  \section{Mail}
+    \href{mailto:amarjeet.kapoor1@gmail.com}{\textbf{amarjeet.kapoor1@}\\gmail.com}
+    ~
+  \section{Git and Web}
+    \href{github.com/amarjeetkapoor1}{\small{github.com/amarjeetkapoor1}}
+    \href{http://amarjeetkapoor1.wordpress.com}{\textbf{amarjeetkapoor1.\\wordpress.com}}
+    ~
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+  \section{Programming \\ Language}
+    \smartdiagram[bubble diagram]{
+        \textbf{C/C++},
+        \textbf{\hspace{1.5mm} Python \hspace{1.5mm} \vspace{3mm}},
+        \textbf{TeX},
+        \textbf{HTML}\\\textbf{JS},
+        \textbf{Bash},
+        \textbf{SQL},
+        \textbf{Octave},
+        Mark\\down
+    }
+    ~
+  \section{Personal Skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{Team}\\\textbf{Player},
+        \textbf{Curiosity},
+        \textbf{Problem}\\\textbf{Solving},
+        \textbf{Transcend}\\ {Lang.},
+        \textbf{Logical}\\ {Thinking},
+        \textbf{Self}\\ {Learner},
+        \textbf{Organize}
+    }
+\end{aside}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2013 - 2017}
+    {Bachelor's Degree in Computer Science and Engineering}
+    {78 \%}
+    {Guru Nanak Dev Engineering College}
+  \entry
+    {2013}
+    {Higher Secondary Examination}
+    {90.8 \%}
+    {Green Land Sr. Sec. Public School (CBSE)}
+    \entry
+    {2011}
+    {Matriculation}
+    {8.6 CGPA}
+    {Green Land Sr. Sec. Public School (CBSE) }
+\end{entrylist}
+
+\section{Projects}
+\begin{entrylist}
+  \entry
+    {}
+    {OpenSCAD Customizer}
+    {OpenSCAD}
+    {
+        This is a Google Summer of Code (GSoC) project under OpenSCAD community. It
+        intends to make a form like interface for modifying models by
+        evaluation of file written in scad language. Basically this is
+        adding feature in SCAD language to add meta information. For
+        more info:
+    
+    
+        \textit{\href{http://brlcad.org/wiki/User:Amarjeet_Singh_Kapoor/GSoC2016/Project}{http://brlcad.org/wiki/User:Amarjeet\_Singh\_Kapoor/GSoC2016/Project}}
+        
+        \textit{\href{https://github.com/openscad/openscad/tree/gsoc2016}{https://github.com/opencad/openscad/tree/gsoc2016}}
+    }
+  \entry
+    {}
+    {CivilOctave}
+    {6-Week Training}
+    {
+        It is a project to study the Dynamic of Structure by using a web
+        Interface. It does all the calculation for simple structure in
+        background and provide Users with results from which
+        Engineers can decide whether Structure will be stable or not.
+        
+        
+        \textit{\href{https://github.com/amarjeetkapoor1/CivilOctave}{https://github.com/amarjeetkapoor1/CivilOctave}}
+    }
+    \entry
+    {}
+    {Sim(Structure information modeling)}
+    {TCC}
+    {
+        This is a large undertaking for which work is still being done.
+        This software intends to provide users with ability to store
+        information of a structure in DB and then provide full analysis
+        and design of that structure and upon completion it will provide
+        Companies the ability to analyze and predict over all cost and
+        material requirement of the projects.
+        
+        \textit{\href{https://github.com/amarjeetkapoor1/Sim}{https://github.com/amarjeetkapoor1/Sim}}
+    }
+    \entry
+    {}
+    {Image processing}
+    {}
+    {
+        It consist of programs to find the number of significant colors and to find the objects of particular shape and of particular
+    color from camera
+    
+    
+        \textit{\href{https://github.com/amarjeetkapoor1/image-process}{https://github.com/amarjeetkapoor1/image-process}}
+    }
+    
+    \entry
+    {}
+    {TheRoadProject}
+    {TCC}
+    {
+    This is the automation of process of finding the sections of road at particular distanace on the road. Then calculating the RL values on that road plus on the given sections using GRASS GIS.
+    
+    
+    \textit{\href{https://github.com/amarjeetkapoor1/TheRoadProject}{ https://github.com/amarjeetkapoor1/TheRoadProject}
+    }}
+    
+        \entry
+    {}
+    {AppRoxEr}
+    {DeeCoders}
+    {
+     AppRoxEr is an android app based on HTML parsing that serves the student of GNDEC for the purposes of academic attendance, time table, etc.
+    }
+    
+\end{entrylist}
+\\
+\newpage
+
+\begin{aside}
+  \section{OS Preference}
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Unix}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Windows}\includegraphics[scale=0.40]{img/1stars.png}
+    ~
+  \section{Languages}
+    \textbf{English}
+    \textbf{Punjabi}
+    \textbf{Hindi}
+    ~
+  \section{Technologies \\ Used}
+    \smartdiagram[bubble diagram]{
+        \textbf{OpenCV},
+        \textbf{LaTeX},
+        \textbf{Django},
+        \textbf{QT},
+        \textbf{SageMath},
+        \textbf{Doxygen},
+        \textbf{Flex},
+        \textbf{Bision},
+        \textbf{GIT}
+    }
+\end{aside}
+
+\section{Achievements}
+\begin{entrylist}
+  \entry{}
+    {Google Summer of Codes, 2016}
+    {}{}
+    \entry{}
+    {
+        Successfully collaborating with Open Sources Projects 
+    }{}{}
+    \entry{}{
+Won District level medals in table tennis.}{}{}
+
+\end{entrylist}
+
+\section{Internship \& Training}
+    \begin{entrylist}
+    \entry
+    {}
+    {Google Summer Of Code }  
+    {OpenSCAD}
+    {3-month programme to contribute in Open Source Project }
+    
+    \entry
+    {}
+    {6-Month Software Training }
+    {TCC}
+    {6-month Software Training in various technologies like Qt, Bision,flex GRASS GIS etc}
+    \entry
+    {}
+    {6-week Software Training}  
+    {TCC}
+    {
+        Software training in various stuff like Vim, Linux,Image Processing, Sagemath, HTML,Bash,Make,Git etc.
+    }
+    \entry
+    {}
+    {Instituational Training}{GNDEC} 
+    {
+    Institutional Training from GNDEC Ludhiana in SQL and C++ (6 weeks).}
+\end{entrylist}
+
+\begin{flushright}
+\emph{Amarjeet Singh Kapoor}
+\end{flushright}
+
+\end{document}
